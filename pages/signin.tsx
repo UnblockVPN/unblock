@@ -29,7 +29,7 @@ const SignIn = () => {
           <div className="flex flex-col space-y-4">
             <Auth
               supabaseClient={supabaseClient}
-              providers={['github', 'apple', 'google', 'azure']}
+              providers={['github', 'apple', 'google', 'azure', 'twilio']}
               redirectTo={getURL()}
               magicLink={true}
               appearance={{
