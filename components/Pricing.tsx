@@ -1,3 +1,28 @@
+// This code defines the Pricing component, which renders a page with pricing plans for a subscription service.
+
+// The Pricing component takes a single prop, products, which is an array of objects representing the pricing plans.
+
+// The Pricing component first checks if the products array is empty. If it is, the component renders a message saying that no pricing plans have been found.
+
+// If the products array is not empty, the component renders a section with the following elements:
+
+// * A header with the text "Pricing Plans"
+// * A paragraph with the text "Start building for free, then add a site plan to go live. Account plans unlock additional features."
+// * A set of buttons that allow the user to select a billing interval (month or year)
+// * A grid of cards, one for each pricing plan. Each card includes the following information:
+//* The name of the pricing plan
+//* The description of the pricing plan
+//* The price of the pricing plan
+//* A button that allows the user to subscribe to the pricing plan
+
+// The Pricing component also includes a footer with the logos of the following companies:
+
+// * Next.js
+// * Vercel
+// * Stripe
+// * Supabase
+// * GitHub
+
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import cn from 'classnames';
