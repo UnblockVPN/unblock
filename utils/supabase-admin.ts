@@ -1,19 +1,3 @@
-// This code defines the following functions:
-
-// * upsertProductRecord: This function upserts a product record in the Supabase database.
-// * upsertPriceRecord: This function upserts a price record in the Supabase database.
-// * createOrRetrieveCustomer: This function creates or retrieves a customer record in the Supabase database.
-// * manageSubscriptionStatusChange: This function manages the status of a subscription in the Supabase database.
-
-// The upsertProductRecord function takes a product object as input and upserts it in the products table in the Supabase database.
-// The upsertPriceRecord function takes a price object as input and upserts it in the prices table in the Supabase database.
-// The createOrRetrieveCustomer function takes a uuid and an email as input and creates or retrieves a customer record in the customers table in the Supabase database.
-// The manageSubscriptionStatusChange function takes a subscriptionId, a customerId, and a createAction as input and manages the status of a subscription in the subscriptions table in the Supabase database.
-
-// The createAction flag is used to indicate whether the subscription is being created or updated.
-// If the createAction flag is set to true, the manageSubscriptionStatusChange function will also copy the billing details from the payment method to the customer object.
-
-
 import { createClient } from '@supabase/supabase-js';
 import Stripe from 'stripe';
 
@@ -42,11 +26,8 @@ const upsertProductRecord = async (product: Stripe.Product) => {
 
   const { error } = await supabaseAdmin.from('products').upsert([productData]);
   if (error) throw error;
-
-  // Log progress to console
   console.log(`Product inserted/updated: ${product.id}`);
 };
-
 
 const upsertPriceRecord = async (price: Stripe.Price) => {
   const priceData: Price = {
@@ -63,12 +44,8 @@ const upsertPriceRecord = async (price: Stripe.Price) => {
     metadata: price.metadata
   };
 
-  // Log progress to console
-  console.log(`Upserting price ${price.id}`);
-
   const { error } = await supabaseAdmin.from('prices').upsert([priceData]);
   if (error) throw error;
-
   console.log(`Price inserted/updated: ${price.id}`);
 };
 
@@ -79,9 +56,6 @@ const createOrRetrieveCustomer = async ({
   email: string;
   uuid: string;
 }) => {
-  // Log progress to console
-  console.log(`Creating or retrieving customer ${uuid}`);
-
   const { data, error } = await supabaseAdmin
     .from('customers')
     .select('stripe_customer_id')
@@ -149,14 +123,6 @@ const manageSubscriptionStatusChange = async (
   const subscription = await stripe.subscriptions.retrieve(subscriptionId, {
     expand: ['default_payment_method']
   });
-
-  // Log progress to console
-  console.log(`Checking subscription status for ${subscriptionId}`);
-
-  if (subscription.status === 'active') {
-    // Subscription is active, do nothing
-  }
-  
   // Upsert the latest status of the subscription object.
   const subscriptionData: Database['public']['Tables']['subscriptions']['Insert'] =
     {
