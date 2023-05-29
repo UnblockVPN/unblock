@@ -90,6 +90,23 @@ export interface Database {
           name?: string | null
         }
       }
+      services: {
+        Row: {
+          created_at: string | null
+          id: number
+          name: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          id?: number
+          name?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          id?: number
+          name?: string | null
+        }
+      }
       subscriptions: {
         Row: {
           cancel_at: string | null
