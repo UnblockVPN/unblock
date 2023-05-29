@@ -188,4 +188,3 @@ return (
       </div>
     </section>
   );
-            }
