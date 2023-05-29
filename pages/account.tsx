@@ -1,4 +1,3 @@
-// Import statements
 import { useState, ReactNode } from 'react';
 import Link from 'next/link';
 import { GetServerSidePropsContext } from 'next';
@@ -7,7 +6,11 @@ import {
   User
 } from '@supabase/auth-helpers-nextjs';
 
-// Interface definition
+import LoadingDots from '@/components/ui/LoadingDots';
+import Button from '@/components/ui/Button';
+import { useUser } from '@/utils/useUser';
+import { postData } from '@/utils/helpers';
+
 interface Props {
   title: string;
   description?: string;
@@ -15,16 +18,9 @@ interface Props {
   children: ReactNode;
 }
 
-// Card component
 function Card({ title, description, footer, children }: Props) {
-  // This function renders a card with the given props.
-
-  // The `className` property is used to set the CSS class for the card.
-  const className = 'border border-zinc-700	max-w-3xl w-full p rounded-md m-auto my-8';
-
-  // The `div` element with the `className` property is used to render the card.
   return (
-    <div className={className}>
+    <div className="border border-zinc-700	max-w-3xl w-full p rounded-md m-auto my-8">
       <div className="px-5 py-4">
         <h3 className="text-2xl mb-1 font-medium">{title}</h3>
         <p className="text-zinc-300">{description}</p>
@@ -37,29 +33,20 @@ function Card({ title, description, footer, children }: Props) {
   );
 }
 
-// getServerSideProps function
 export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
-  // This function gets the data from the server and returns it as props to the `Account` component.
-
-  // The `supabase` variable is used to create a `Supabase` client instance.
   const supabase = createServerSupabaseClient(ctx);
-
-  // The `data` variable is used to get the data from the server.
   const {
     data: { session }
   } = await supabase.auth.getSession();
 
-  // If the user is not logged in, redirect them to the sign-in page.
-  if (!session) {
+  if (!session)
     return {
       redirect: {
         destination: '/signin',
         permanent: false
       }
     };
-  }
 
-  // Return the props for the `Account` component.
   return {
     props: {
       initialSession: session,
@@ -68,17 +55,10 @@ export const getServerSideProps = async (ctx: GetServerSidePropsContext) => {
   };
 };
 
-// Account component
 export default function Account({ user }: { user: User }) {
-  // This function renders the `Account` component.
-
-  // State variable to track whether the component is loading.
   const [loading, setLoading] = useState(false);
-
-  // Get the data from the `useUser` hook.
   const { isLoading, subscription, userDetails } = useUser();
 
-  // Function to redirect the user to the customer portal.
   const redirectToCustomerPortal = async () => {
     setLoading(true);
     try {
@@ -92,7 +72,6 @@ export default function Account({ user }: { user: User }) {
     setLoading(false);
   };
 
-  // Get the subscription price.
   const subscriptionPrice =
     subscription &&
     new Intl.NumberFormat('en-US', {
@@ -101,10 +80,7 @@ export default function Account({ user }: { user: User }) {
       minimumFractionDigits: 0
     }).format((subscription?.prices?.unit_amount || 0) / 100);
 
-  // This code returns the `Account` component.
-
-// The `section` element with the `className` property is used to render the header of the account page.
-return (
+  return (
     <section className="bg-black mb-32">
       <div className="max-w-6xl mx-auto pt-8 sm:pt-24 pb-8 px-4 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
@@ -117,7 +93,6 @@ return (
         </div>
       </div>
       <div className="p-4">
-        // This code renders a card with the title "Your Plan".
         <Card
           title="Your Plan"
           description={
@@ -141,7 +116,6 @@ return (
             </div>
           }
         >
-          // This code renders the price of the subscription.
           <div className="text-xl mt-8 mb-4 font-semibold">
             {isLoading ? (
               <div className="h-12 mb-6">
@@ -154,13 +128,11 @@ return (
             )}
           </div>
         </Card>
-        // This code renders a card with the title "Your Name".
         <Card
           title="Your Name"
           description="Please enter your full name, or a display name you are comfortable with."
           footer={<p>Please use 64 characters at maximum.</p>}
         >
-          // This code renders the user's name.
           <div className="text-xl mt-8 mb-4 font-semibold">
             {userDetails ? (
               `${
@@ -174,13 +146,11 @@ return (
             )}
           </div>
         </Card>
-        // This code renders a card with the title "Your Email".
         <Card
           title="Your Email"
           description="Please enter the email address you want to use to login."
           footer={<p>We will email you to verify the change.</p>}
         >
-          // This code renders the user's email address.
           <p className="text-xl mt-8 mb-4 font-semibold">
             {user ? user.email : undefined}
           </p>
@@ -188,3 +158,4 @@ return (
       </div>
     </section>
   );
+}
