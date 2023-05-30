@@ -1,12 +1,3 @@
-// This code imports the Stripe class from the stripe module.
-
-// The stripe variable is a Stripe object that can be used to make Stripe API requests.
-// The stripe object is created with the Stripe secret key from the STRIPE_SECRET_KEY environment variable.
-// The stripe object is also configured with the following options:
-
-// - apiVersion: The Stripe API version to use.
-// - appInfo: Information about the plugin, such as its name and version.
-
 import Stripe from 'stripe';
 
 export const stripe = new Stripe(
