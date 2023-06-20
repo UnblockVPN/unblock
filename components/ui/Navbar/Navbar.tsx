@@ -28,7 +28,7 @@ export default async function Navbar() {
                 Pricing
               </Link>
               <Link href="/" className={s.link}>
-                What is a VPN
+                What
               </Link>
               <Link href="/" className={s.link}>
                 Blog
