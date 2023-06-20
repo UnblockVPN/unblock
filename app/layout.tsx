@@ -5,12 +5,12 @@ import 'styles/main.css';
 import 'styles/chrome-bug.css';
 
 const meta = {
-  title: 'Next.js Subscription Starter',
-  description: 'Brought to you by Vercel, Stripe, and Supabase.',
+  title: 'The VPN that just rips',
+  description: 'Brought to you by Vercel, Stripe, Github, ChatGPT, and Supabase.',
   cardImage: '/og.png',
   robots: 'follow, index',
   favicon: '/favicon.ico',
-  url: 'https://subscription-starter.vercel.app',
+  url: 'https://unblockvpn.io',
   type: 'website'
 };
 
