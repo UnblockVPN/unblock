@@ -27,6 +27,12 @@ export default async function Navbar() {
               <Link href="/" className={s.link}>
                 Pricing
               </Link>
+              <Link href="/about" className={s.link}>
+                About
+              </Link>
+              <Link href="/support" className={s.link}>
+                Support
+              </Link>
               {user && (
                 <Link href="/account" className={s.link}>
                   Account
