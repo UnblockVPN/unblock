@@ -1,5 +1,7 @@
 {
   "/page": "app/page.js",
-  "/signin/page": "app/signin/page.js",
-  "/countries/usa/page": "app/countries/usa/page.js"
+  "/countries/page": "app/countries/page.js",
+  "/countries/usa/page": "app/countries/usa/page.js",
+  "/countries/uk/page": "app/countries/uk/page.js",
+  "/countries/eu/page": "app/countries/eu/page.js"
 }

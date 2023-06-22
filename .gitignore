@@ -28,4 +28,4 @@ out/
 *.tmp
 .bash_history
 .vimrc
-.next/
+.next/*
