@@ -24,10 +24,34 @@
       "static/css/app/about/page.css",
       "static/chunks/app/about/page.js"
     ],
+    "/countries/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/countries/page.css",
+      "static/chunks/app/countries/page.js"
+    ],
+    "/countries/uk/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/countries/uk/page.css",
+      "static/chunks/app/countries/uk/page.js"
+    ],
     "/signin/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/signin/page.js"
+    ],
+    "/countries/eu/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/countries/eu/page.css",
+      "static/chunks/app/countries/eu/page.js"
+    ],
+    "/countries/usa/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/countries/usa/page.css",
+      "static/chunks/app/countries/usa/page.js"
     ]
   }
 }

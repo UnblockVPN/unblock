@@ -24,20 +24,18 @@ export default async function Navbar() {
               <Logo />
             </Link>
             <nav className="hidden ml-6 space-x-2 lg:block">
-              <Link href="/" className={s.link}>
-                Pricing
+              <Link href="/whatis" className={s.link}>
+                What is VPN
               </Link>
-              <Link href="/about" className={s.link}>
-                About
+              <Link href="/download" className={s.link}>
+                Download VPN
               </Link>
               <Link href="/support" className={s.link}>
                 Support
               </Link>
-              {user && (
-                <Link href="/account" className={s.link}>
-                  Account
-                </Link>
-              )}
+              <Link href="/blog" className={s.link}>
+                Blog
+              </Link>
             </nav>
           </div>
           <div className="flex justify-end flex-1 space-x-8">
@@ -45,9 +43,12 @@ export default async function Navbar() {
               <SignOutButton />
             ) : (
               <Link href="/signin" className={s.link}>
-                Sign in
+                My Account
               </Link>
             )}
+              <Link href="/" className={s.link}>
+                Get Started
+              </Link>
           </div>
         </div>
       </div>
