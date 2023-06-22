@@ -763,7 +763,7 @@
         "id": "(sc_client)/./app/supabase-provider.tsx",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/signin/page:static/chunks/app/signin/page.js"
         ],
         "async": false
       },
@@ -771,7 +771,7 @@
         "id": "(sc_client)/./app/supabase-provider.tsx",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/signin/page:static/chunks/app/signin/page.js"
         ],
         "async": false
       },
@@ -779,7 +779,7 @@
         "id": "(sc_client)/./app/supabase-provider.tsx",
         "name": "default",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/signin/page:static/chunks/app/signin/page.js"
         ],
         "async": false
       },
@@ -787,7 +787,7 @@
         "id": "(sc_client)/./app/supabase-provider.tsx",
         "name": "useSupabase",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/signin/page:static/chunks/app/signin/page.js"
         ],
         "async": false
       }
@@ -823,7 +823,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/support/page:static/chunks/app/support/page.js"
+          "app/about/page:static/chunks/app/about/page.js"
         ],
         "async": false
       },
@@ -831,7 +831,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/support/page:static/chunks/app/support/page.js"
+          "app/about/page:static/chunks/app/about/page.js"
         ],
         "async": false
       },
@@ -839,7 +839,7 @@
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/support/page:static/chunks/app/support/page.js"
+          "app/about/page:static/chunks/app/about/page.js"
         ],
         "async": false
       }
@@ -875,7 +875,7 @@
         "id": "(sc_client)/./components/ui/Button/Button.tsx",
         "name": "*",
         "chunks": [
-          "app/support/page:static/chunks/app/support/page.js"
+          "app/about/page:static/chunks/app/about/page.js"
         ],
         "async": false
       },
@@ -883,7 +883,7 @@
         "id": "(sc_client)/./components/ui/Button/Button.tsx",
         "name": "",
         "chunks": [
-          "app/support/page:static/chunks/app/support/page.js"
+          "app/about/page:static/chunks/app/about/page.js"
         ],
         "async": false
       },
@@ -891,7 +891,7 @@
         "id": "(sc_client)/./components/ui/Button/Button.tsx",
         "name": "default",
         "chunks": [
-          "app/support/page:static/chunks/app/support/page.js"
+          "app/about/page:static/chunks/app/about/page.js"
         ],
         "async": false
       }
@@ -901,7 +901,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "*",
         "chunks": [
-          "app/support/page:static/chunks/app/support/page.js"
+          "app/signin/page:static/chunks/app/signin/page.js"
         ],
         "async": false
       },
@@ -909,7 +909,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "",
         "chunks": [
-          "app/support/page:static/chunks/app/support/page.js"
+          "app/signin/page:static/chunks/app/signin/page.js"
         ],
         "async": false
       },
@@ -917,7 +917,7 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "suspense",
         "chunks": [
-          "app/support/page:static/chunks/app/support/page.js"
+          "app/signin/page:static/chunks/app/signin/page.js"
         ],
         "async": false
       },
@@ -925,7 +925,85 @@
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "NoSSR",
         "chunks": [
-          "app/support/page:static/chunks/app/support/page.js"
+          "app/signin/page:static/chunks/app/signin/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/Pricing.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/Pricing.tsx",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/Pricing.tsx",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/Pricing.tsx",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/about/ManageSubscriptionButton.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/about/ManageSubscriptionButton.tsx",
+        "name": "*",
+        "chunks": [
+          "app/about/page:static/chunks/app/about/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/about/ManageSubscriptionButton.tsx",
+        "name": "",
+        "chunks": [
+          "app/about/page:static/chunks/app/about/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/about/ManageSubscriptionButton.tsx",
+        "name": "default",
+        "chunks": [
+          "app/about/page:static/chunks/app/about/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/signin/AuthUI.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/signin/AuthUI.tsx",
+        "name": "*",
+        "chunks": [
+          "app/signin/page:static/chunks/app/signin/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/signin/AuthUI.tsx",
+        "name": "",
+        "chunks": [
+          "app/signin/page:static/chunks/app/signin/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/signin/AuthUI.tsx",
+        "name": "default",
+        "chunks": [
+          "app/signin/page:static/chunks/app/signin/page.js"
         ],
         "async": false
       }
@@ -938,6 +1016,12 @@
     ],
     "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/support/page": [
       "static/css/app/support/page.css"
+    ],
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/page": [
+      "static/css/app/page.css"
+    ],
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/about/page": [
+      "static/css/app/about/page.css"
     ]
   },
   "clientModules": {
@@ -2687,7 +2771,7 @@
       "id": "(app-client)/./app/supabase-provider.tsx",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/signin/page:static/chunks/app/signin/page.js"
       ],
       "async": false
     },
@@ -2695,7 +2779,7 @@
       "id": "(app-client)/./app/supabase-provider.tsx",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/signin/page:static/chunks/app/signin/page.js"
       ],
       "async": false
     },
@@ -2703,7 +2787,7 @@
       "id": "(app-client)/./app/supabase-provider.tsx",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/signin/page:static/chunks/app/signin/page.js"
       ],
       "async": false
     },
@@ -2711,7 +2795,7 @@
       "id": "(app-client)/./app/supabase-provider.tsx",
       "name": "useSupabase",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/signin/page:static/chunks/app/signin/page.js"
       ],
       "async": false
     },
@@ -2743,7 +2827,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
     },
@@ -2751,7 +2835,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
     },
@@ -2759,7 +2843,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
     },
@@ -2767,7 +2851,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
     },
@@ -2775,7 +2859,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
     },
@@ -2783,7 +2867,7 @@
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
     },
@@ -2791,14 +2875,18 @@
       "id": "null",
       "name": "default",
       "chunks": [
-        "static/css/app/support/page.css"
+        "static/css/app/support/page.css",
+        "static/css/app/page.css",
+        "static/css/app/about/page.css"
       ]
     },
     "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/LoadingDots/LoadingDots.module.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
-        "static/css/app/support/page.css"
+        "static/css/app/support/page.css",
+        "static/css/app/page.css",
+        "static/css/app/about/page.css"
       ]
     },
     "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/support/ManageSubscriptionButton.tsx": {
@@ -2829,7 +2917,7 @@
       "id": "(app-client)/./components/ui/Button/Button.tsx",
       "name": "*",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
     },
@@ -2837,7 +2925,7 @@
       "id": "(app-client)/./components/ui/Button/Button.tsx",
       "name": "",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
     },
@@ -2845,7 +2933,7 @@
       "id": "(app-client)/./components/ui/Button/Button.tsx",
       "name": "default",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/about/page:static/chunks/app/about/page.js"
       ],
       "async": false
     },
@@ -2853,7 +2941,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "*",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/signin/page:static/chunks/app/signin/page.js"
       ],
       "async": false
     },
@@ -2861,7 +2949,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "*",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/signin/page:static/chunks/app/signin/page.js"
       ],
       "async": false
     },
@@ -2869,7 +2957,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/signin/page:static/chunks/app/signin/page.js"
       ],
       "async": false
     },
@@ -2877,7 +2965,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/signin/page:static/chunks/app/signin/page.js"
       ],
       "async": false
     },
@@ -2885,7 +2973,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "suspense",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/signin/page:static/chunks/app/signin/page.js"
       ],
       "async": false
     },
@@ -2893,7 +2981,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "suspense",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/signin/page:static/chunks/app/signin/page.js"
       ],
       "async": false
     },
@@ -2901,7 +2989,7 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "NoSSR",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/signin/page:static/chunks/app/signin/page.js"
       ],
       "async": false
     },
@@ -2909,7 +2997,79 @@
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "NoSSR",
       "chunks": [
-        "app/support/page:static/chunks/app/support/page.js"
+        "app/signin/page:static/chunks/app/signin/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx": {
+      "id": "(app-client)/./components/Pricing.tsx",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx#": {
+      "id": "(app-client)/./components/Pricing.tsx",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx#default": {
+      "id": "(app-client)/./components/Pricing.tsx",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/about/ManageSubscriptionButton.tsx": {
+      "id": "(app-client)/./app/about/ManageSubscriptionButton.tsx",
+      "name": "*",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/about/ManageSubscriptionButton.tsx#": {
+      "id": "(app-client)/./app/about/ManageSubscriptionButton.tsx",
+      "name": "",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/about/ManageSubscriptionButton.tsx#default": {
+      "id": "(app-client)/./app/about/ManageSubscriptionButton.tsx",
+      "name": "default",
+      "chunks": [
+        "app/about/page:static/chunks/app/about/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/signin/AuthUI.tsx": {
+      "id": "(app-client)/./app/signin/AuthUI.tsx",
+      "name": "*",
+      "chunks": [
+        "app/signin/page:static/chunks/app/signin/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/signin/AuthUI.tsx#": {
+      "id": "(app-client)/./app/signin/AuthUI.tsx",
+      "name": "",
+      "chunks": [
+        "app/signin/page:static/chunks/app/signin/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/signin/AuthUI.tsx#default": {
+      "id": "(app-client)/./app/signin/AuthUI.tsx",
+      "name": "default",
+      "chunks": [
+        "app/signin/page:static/chunks/app/signin/page.js"
       ],
       "async": false
     }
