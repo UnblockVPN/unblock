@@ -220,16 +220,16 @@ export default function Footer() {
           <li className="py-3 md:py-0 md:pb-4">
             <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
-                href="/support"
+                href="/about"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
-                support UnblockVPN
+                About UnblockVPN
               </Link>
               </p>
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
-                href="/support/privacy"
+                href="/about/privacy"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Privacy Policy
@@ -237,7 +237,7 @@ export default function Footer() {
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
-                href="/support/tos"
+                href="/about/tos"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Terms of Service
@@ -245,7 +245,7 @@ export default function Footer() {
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
-                href="/support/trust"
+                href="/about/trust"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Trust Centre
@@ -253,7 +253,7 @@ export default function Footer() {
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
-                href="/support/audits"
+                href="/about/audits"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Security Audits
@@ -261,7 +261,7 @@ export default function Footer() {
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
-                href="/support/review"
+                href="/about/review"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 UnblockVPN Reviews
@@ -269,7 +269,7 @@ export default function Footer() {
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
-                href="/support/press"
+                href="/about/press"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Press
@@ -277,7 +277,7 @@ export default function Footer() {
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
-                href="/support/careers"
+                href="/about/careers"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Come work for us!

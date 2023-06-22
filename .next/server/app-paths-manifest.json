@@ -1,4 +1,13 @@
 {
   "/page": "app/page.js",
-  "/countries/eu/page": "app/countries/eu/page.js"
+  "/countries/page": "app/countries/page.js",
+  "/download/page": "app/download/page.js",
+  "/support/page": "app/support/page.js",
+  "/channels/influencers/page": "app/channels/influencers/page.js",
+  "/about/privacy/page": "app/about/privacy/page.js",
+  "/countries/usa/page": "app/countries/usa/page.js",
+  "/learn/whatis/page": "app/learn/whatis/page.js",
+  "/about/tos/page": "app/about/tos/page.js",
+  "/learn/blog/page": "app/learn/blog/page.js",
+  "/channels/scholarships/page": "app/channels/scholarships/page.js"
 }

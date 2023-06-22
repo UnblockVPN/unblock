@@ -24,7 +24,7 @@ export default async function Navbar() {
               <Logo />
             </Link>
             <nav className="hidden ml-6 space-x-2 lg:block">
-              <Link href="/whatis" className={s.link}>
+              <Link href="/learn/whatis" className={s.link}>
                 What is VPN
               </Link>
               <Link href="/download" className={s.link}>
@@ -33,7 +33,7 @@ export default async function Navbar() {
               <Link href="/support" className={s.link}>
                 Support
               </Link>
-              <Link href="/blog" className={s.link}>
+              <Link href="/learn/blog" className={s.link}>
                 Blog
               </Link>
             </nav>
