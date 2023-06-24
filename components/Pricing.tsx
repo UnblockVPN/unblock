@@ -166,12 +166,20 @@ export default function Pricing({
     <section className="bg-black">
       <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
-          <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
-            Pricing Plans
+          <h1 className="text-4xl mb-6 font-extrabold text-white sm:text-center sm:text-6xl">
+          Get UnblockVPN in 3 easy steps
           </h1>
           <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
-            Start building for free, then add a site plan to go live. Account
-            plans unlock additional features.
+            First day free, add a plan to go live, cancel any time via stripe. Join the VPN service powered by&nbsp;
+            
+            <a
+              className="text-pink-500 underline"
+              href="https://unblockvpn.io/about/trust"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+               industry leading encryption
+            </a>.
           </p>
           <div className="relative self-center mt-6 bg-zinc-900 rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
             {intervals.includes('month') && (
@@ -264,7 +272,7 @@ export default function Pricing({
 function LogoCloud() {
   return (
     <div>
-      <p className="mt-24 text-xs uppercase text-zinc-400 text-center font-bold tracking-[0.3em]">
+      <p className="mt-12 text-xs uppercase text-zinc-400 text-center font-bold tracking-[0.3em]">
         Brought to you by
       </p>
       <div className="flex flex-col items-center my-12 space-y-4 sm:mt-8 sm:space-y-0 md:mx-auto md:max-w-2xl sm:grid sm:gap-6 sm:grid-cols-5">

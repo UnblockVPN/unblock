@@ -823,7 +823,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -831,7 +831,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -839,59 +839,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/client/link.js",
         "name": "default",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./components/Pricing.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/Pricing.tsx",
-        "name": "*",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/Pricing.tsx",
-        "name": "",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/Pricing.tsx",
-        "name": "default",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./components/ui/Button/Button.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/ui/Button/Button.tsx",
-        "name": "*",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/ui/Button/Button.tsx",
-        "name": "",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/ui/Button/Button.tsx",
-        "name": "default",
-        "chunks": [
-          "app/page:static/chunks/app/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       }
@@ -927,7 +875,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "*",
         "chunks": [
-          "app/signin/page:static/chunks/app/signin/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -935,7 +883,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "",
         "chunks": [
-          "app/signin/page:static/chunks/app/signin/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -943,7 +891,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "suspense",
         "chunks": [
-          "app/signin/page:static/chunks/app/signin/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       },
@@ -951,7 +899,85 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "NoSSR",
         "chunks": [
-          "app/signin/page:static/chunks/app/signin/page.js"
+          "app/account/page:static/chunks/app/account/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/Pricing.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/Pricing.tsx",
+        "name": "*",
+        "chunks": [
+          "app/order/page:static/chunks/app/order/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/Pricing.tsx",
+        "name": "",
+        "chunks": [
+          "app/order/page:static/chunks/app/order/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/Pricing.tsx",
+        "name": "default",
+        "chunks": [
+          "app/order/page:static/chunks/app/order/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/ui/Button/Button.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ui/Button/Button.tsx",
+        "name": "*",
+        "chunks": [
+          "app/account/page:static/chunks/app/account/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/ui/Button/Button.tsx",
+        "name": "",
+        "chunks": [
+          "app/account/page:static/chunks/app/account/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/ui/Button/Button.tsx",
+        "name": "default",
+        "chunks": [
+          "app/account/page:static/chunks/app/account/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./app/account/ManageSubscriptionButton.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/account/ManageSubscriptionButton.tsx",
+        "name": "*",
+        "chunks": [
+          "app/account/page:static/chunks/app/account/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/account/ManageSubscriptionButton.tsx",
+        "name": "",
+        "chunks": [
+          "app/account/page:static/chunks/app/account/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/account/ManageSubscriptionButton.tsx",
+        "name": "default",
+        "chunks": [
+          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       }
@@ -962,8 +988,11 @@ self.__RSC_MANIFEST={
     "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/layout": [
       "static/css/app/layout.css"
     ],
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/page": [
-      "static/css/app/page.css"
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/order/page": [
+      "static/css/app/order/page.css"
+    ],
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/account/page": [
+      "static/css/app/account/page.css"
     ]
   },
   "clientModules": {
@@ -2769,7 +2798,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2777,7 +2806,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2785,7 +2814,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2793,7 +2822,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2801,7 +2830,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2809,69 +2838,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/client/link.js",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/page.css"
-      ]
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/LoadingDots/LoadingDots.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/page.css"
-      ]
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx": {
-      "id": "(app-client)/./components/Pricing.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx#": {
-      "id": "(app-client)/./components/Pricing.tsx",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx#default": {
-      "id": "(app-client)/./components/Pricing.tsx",
-      "name": "default",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.tsx": {
-      "id": "(app-client)/./components/ui/Button/Button.tsx",
-      "name": "*",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.tsx#": {
-      "id": "(app-client)/./components/ui/Button/Button.tsx",
-      "name": "",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.tsx#default": {
-      "id": "(app-client)/./components/ui/Button/Button.tsx",
-      "name": "default",
-      "chunks": [
-        "app/page:static/chunks/app/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2903,7 +2870,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "*",
       "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2911,7 +2878,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "*",
       "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2919,7 +2886,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "",
       "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2927,7 +2894,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "",
       "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2935,7 +2902,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "suspense",
       "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2943,7 +2910,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "suspense",
       "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2951,7 +2918,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "NoSSR",
       "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -2959,7 +2926,95 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "NoSSR",
       "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/order/page.css",
+        "static/css/app/account/page.css"
+      ]
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/LoadingDots/LoadingDots.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/order/page.css",
+        "static/css/app/account/page.css"
+      ]
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx": {
+      "id": "(app-client)/./components/Pricing.tsx",
+      "name": "*",
+      "chunks": [
+        "app/order/page:static/chunks/app/order/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx#": {
+      "id": "(app-client)/./components/Pricing.tsx",
+      "name": "",
+      "chunks": [
+        "app/order/page:static/chunks/app/order/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx#default": {
+      "id": "(app-client)/./components/Pricing.tsx",
+      "name": "default",
+      "chunks": [
+        "app/order/page:static/chunks/app/order/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.tsx": {
+      "id": "(app-client)/./components/ui/Button/Button.tsx",
+      "name": "*",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.tsx#": {
+      "id": "(app-client)/./components/ui/Button/Button.tsx",
+      "name": "",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.tsx#default": {
+      "id": "(app-client)/./components/ui/Button/Button.tsx",
+      "name": "default",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/account/ManageSubscriptionButton.tsx": {
+      "id": "(app-client)/./app/account/ManageSubscriptionButton.tsx",
+      "name": "*",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/account/ManageSubscriptionButton.tsx#": {
+      "id": "(app-client)/./app/account/ManageSubscriptionButton.tsx",
+      "name": "",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/account/ManageSubscriptionButton.tsx#default": {
+      "id": "(app-client)/./app/account/ManageSubscriptionButton.tsx",
+      "name": "default",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     }

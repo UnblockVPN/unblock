@@ -46,7 +46,7 @@ export default async function Navbar() {
                 My Account
               </Link>
             )}
-              <Link href="/" className={s.link}>
+              <Link href="/order" className={s.link}>
                 Get Started
               </Link>
           </div>
