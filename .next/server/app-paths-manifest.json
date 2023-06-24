@@ -1,10 +1,4 @@
 {
-  "/page": "app/page.js",
-  "/order/page": "app/order/page.js",
   "/account/page": "app/account/page.js",
-  "/signin/page": "app/signin/page.js",
-  "/download/page": "app/download/page.js",
-  "/support/page": "app/support/page.js",
-  "/learn/whatis/page": "app/learn/whatis/page.js",
-  "/learn/blog/page": "app/learn/blog/page.js"
+  "/download/page": "app/download/page.js"
 }
