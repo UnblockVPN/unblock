@@ -167,19 +167,10 @@ export default function Pricing({
       <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
           <h1 className="text-4xl mb-6 font-extrabold text-white sm:text-center sm:text-6xl">
-          Get UnblockVPN in 3 easy steps
+          Free upgrade to our family plan
           </h1>
           <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
-            First day free, add a plan to go live, cancel any time via stripe. Join the VPN service powered by&nbsp;
-            
-            <a
-              className="text-pink-500 underline"
-              href="https://unblockvpn.io/about/trust"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-               industry leading encryption
-            </a>.
+            Add a plan to go live, free family plan upgrade auto applied, cancel any time via stripe.
           </p>
           <div className="relative self-center mt-6 bg-zinc-900 rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
             {intervals.includes('month') && (
