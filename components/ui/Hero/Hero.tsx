@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from "next/image";
-import Container from '@/components/ui/Hero/Container';
+// import Container from '@/components/ui/Hero/Container';
 import heroImg from "../../../public/couple_02.png";
 import s from '../Navbar/Navbar.module.css';
 
