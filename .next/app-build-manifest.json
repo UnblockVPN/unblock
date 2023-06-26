@@ -46,6 +46,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/about/trust/page.js"
     ],
+    "/about/press/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/press/page.js"
+    ],
     "/about/audits/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -55,11 +60,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/about/review/page.js"
-    ],
-    "/about/press/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/about/press/page.js"
     ],
     "/about/careers/page": [
       "static/chunks/webpack.js",
