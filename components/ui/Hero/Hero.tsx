@@ -8,6 +8,7 @@ const Hero = () => {
   return (
     <>
       {/* <Container className="flex flex-wrap mt-2  max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8"> */}
+      <div className="flex flex-wrap mt-2  max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
         <div className="flex items-center text-left w-full lg:w-1/2">
           <div className="max-w-2xl">
           <h2 className="text-left text-2xl mb-6 font-extrabold text-white sm:text-left sm:text-2xl">
@@ -85,7 +86,11 @@ const Hero = () => {
           </div>
         </div>
       {/* </Container>
+
+      
       <Container> */}
+
+</div>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-white dark:text-white">
             Trusted by <span className="text-pink-600">2000+</span>{" "}

@@ -758,6 +758,92 @@
         "async": false
       }
     },
+    "(app-client)/./app/supabase-provider.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/supabase-provider.tsx",
+        "name": "*",
+        "chunks": [
+          "app/signin/page:static/chunks/app/signin/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/supabase-provider.tsx",
+        "name": "",
+        "chunks": [
+          "app/signin/page:static/chunks/app/signin/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/supabase-provider.tsx",
+        "name": "default",
+        "chunks": [
+          "app/signin/page:static/chunks/app/signin/page.js"
+        ],
+        "async": false
+      },
+      "useSupabase": {
+        "id": "(sc_client)/./app/supabase-provider.tsx",
+        "name": "useSupabase",
+        "chunks": [
+          "app/signin/page:static/chunks/app/signin/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/ui/Navbar/SignOutButton.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ui/Navbar/SignOutButton.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/ui/Navbar/SignOutButton.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/ui/Navbar/SignOutButton.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [
+          "app/account/page:static/chunks/app/account/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "",
+        "chunks": [
+          "app/account/page:static/chunks/app/account/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "default",
+        "chunks": [
+          "app/account/page:static/chunks/app/account/page.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./public/couple_02.png": {
       "*": {
         "id": "(sc_client)/./public/couple_02.png",
@@ -806,32 +892,6 @@
         "name": "default",
         "chunks": [
           "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/next/dist/client/link.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "*",
-        "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "",
-        "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "default",
-        "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       }
@@ -978,66 +1038,6 @@
         "name": "value",
         "chunks": [
           "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./app/supabase-provider.tsx": {
-      "*": {
-        "id": "(sc_client)/./app/supabase-provider.tsx",
-        "name": "*",
-        "chunks": [
-          "app/signin/page:static/chunks/app/signin/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/supabase-provider.tsx",
-        "name": "",
-        "chunks": [
-          "app/signin/page:static/chunks/app/signin/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/supabase-provider.tsx",
-        "name": "default",
-        "chunks": [
-          "app/signin/page:static/chunks/app/signin/page.js"
-        ],
-        "async": false
-      },
-      "useSupabase": {
-        "id": "(sc_client)/./app/supabase-provider.tsx",
-        "name": "useSupabase",
-        "chunks": [
-          "app/signin/page:static/chunks/app/signin/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./components/ui/Navbar/SignOutButton.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/ui/Navbar/SignOutButton.tsx",
-        "name": "*",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/ui/Navbar/SignOutButton.tsx",
-        "name": "",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/ui/Navbar/SignOutButton.tsx",
-        "name": "default",
-        "chunks": [
-          "app/layout:static/chunks/app/layout.js"
         ],
         "async": false
       }
@@ -2922,6 +2922,124 @@
       ],
       "async": false
     },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/styles/main.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/Navbar.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx": {
+      "id": "(app-client)/./app/supabase-provider.tsx",
+      "name": "*",
+      "chunks": [
+        "app/signin/page:static/chunks/app/signin/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx#": {
+      "id": "(app-client)/./app/supabase-provider.tsx",
+      "name": "",
+      "chunks": [
+        "app/signin/page:static/chunks/app/signin/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx#default": {
+      "id": "(app-client)/./app/supabase-provider.tsx",
+      "name": "default",
+      "chunks": [
+        "app/signin/page:static/chunks/app/signin/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx#useSupabase": {
+      "id": "(app-client)/./app/supabase-provider.tsx",
+      "name": "useSupabase",
+      "chunks": [
+        "app/signin/page:static/chunks/app/signin/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/SignOutButton.tsx": {
+      "id": "(app-client)/./components/ui/Navbar/SignOutButton.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/SignOutButton.tsx#": {
+      "id": "(app-client)/./components/ui/Navbar/SignOutButton.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/SignOutButton.tsx#default": {
+      "id": "(app-client)/./components/ui/Navbar/SignOutButton.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/esm/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/esm/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/esm/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/account/page:static/chunks/app/account/page.js"
+      ],
+      "async": false
+    },
     "/Users/davidawatere/GitHub/_saas/unblock/unblock/public/couple_02.png": {
       "id": "(app-client)/./public/couple_02.png",
       "name": "*",
@@ -2991,54 +3109,6 @@
       "name": "default",
       "chunks": [
         "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/esm/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/client/link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/esm/client/link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/client/link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/esm/client/link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -3327,76 +3397,6 @@
       "name": "value",
       "chunks": [
         "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/styles/main.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/Navbar.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx": {
-      "id": "(app-client)/./app/supabase-provider.tsx",
-      "name": "*",
-      "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx#": {
-      "id": "(app-client)/./app/supabase-provider.tsx",
-      "name": "",
-      "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx#default": {
-      "id": "(app-client)/./app/supabase-provider.tsx",
-      "name": "default",
-      "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx#useSupabase": {
-      "id": "(app-client)/./app/supabase-provider.tsx",
-      "name": "useSupabase",
-      "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/SignOutButton.tsx": {
-      "id": "(app-client)/./components/ui/Navbar/SignOutButton.tsx",
-      "name": "*",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/SignOutButton.tsx#": {
-      "id": "(app-client)/./components/ui/Navbar/SignOutButton.tsx",
-      "name": "",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/SignOutButton.tsx#default": {
-      "id": "(app-client)/./components/ui/Navbar/SignOutButton.tsx",
-      "name": "default",
-      "chunks": [
-        "app/layout:static/chunks/app/layout.js"
       ],
       "async": false
     },
