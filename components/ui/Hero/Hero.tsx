@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from "next/image";
-import Container from "./Container";
+import Container from '@/components/ui/Hero/Container';
 import heroImg from "../../../public/couple_02.png";
 import s from '../Navbar/Navbar.module.css';
 
@@ -43,9 +43,9 @@ const Hero = () => {
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
 
-            {/* <Link href="/order" className="{s.link} px-8 py-4 text-lg font-medium text-center bg-indigo-600 rounded-md">
+            <Link href="/order" className="{s.link} px-8 py-4 text-lg font-medium text-center bg-indigo-600 rounded-md">
             Get Started
-            </Link> */}
+            </Link>
 
 
               <a

@@ -6,25 +6,30 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
+    "/learn/whatis/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/learn/whatis/page.js"
+    ],
+    "/download/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/download/page.js"
+    ],
     "/support/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/support/page.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
     ],
     "/learn/blog/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/learn/blog/page.js"
     ],
-    "/about/privacy/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/privacy/page.js"
+      "static/chunks/app/page.js"
     ],
     "/about/tos/page": [
       "static/chunks/webpack.js",
@@ -36,15 +41,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/about/trust/page.js"
     ],
+    "/about/privacy/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/privacy/page.js"
+    ],
     "/about/audits/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/about/audits/page.js"
-    ],
-    "/download/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/download/page.js"
     ],
     "/about/review/page": [
       "static/chunks/webpack.js",
@@ -112,11 +117,6 @@
       "static/chunks/main-app.js",
       "static/css/app/account/page.css",
       "static/chunks/app/account/page.js"
-    ],
-    "/learn/whatis/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/learn/whatis/page.js"
     ],
     "/countries/usa/page": [
       "static/chunks/webpack.js",
