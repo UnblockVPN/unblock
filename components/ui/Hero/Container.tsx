@@ -14,7 +14,6 @@ const Container = (props) => {
 
 export default Container;
  */
-
 import React from "react";
 
 interface ContainerProps {
@@ -22,7 +21,7 @@ interface ContainerProps {
   children: React.ReactNode;
 }
 
-const Container: React.FC<ContainerProps> = (props) => {
+const Container: React.FC<ContainerProps> = (props: ContainerProps) => {
   return (
     <div
       className={`container p-8 mx-auto xl:px-0 ${
@@ -35,3 +34,4 @@ const Container: React.FC<ContainerProps> = (props) => {
 };
 
 export default Container;
+

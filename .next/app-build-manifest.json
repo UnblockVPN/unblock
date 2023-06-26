@@ -11,15 +11,15 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/download/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/download/page.js"
-    ],
     "/learn/whatis/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/learn/whatis/page.js"
+    ],
+    "/download/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/download/page.js"
     ],
     "/support/page": [
       "static/chunks/webpack.js",
@@ -81,15 +81,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/channels/scholarships/page.js"
     ],
-    "/countries/uk/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/countries/uk/page.js"
-    ],
     "/countries/eu/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/countries/eu/page.js"
+    ],
+    "/countries/uk/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/countries/uk/page.js"
     ],
     "/order/page": [
       "static/chunks/webpack.js",
@@ -97,15 +97,15 @@
       "static/css/app/order/page.css",
       "static/chunks/app/order/page.js"
     ],
-    "/channels/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/channels/page.js"
-    ],
     "/channels/influencers/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/channels/influencers/page.js"
+    ],
+    "/channels/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/channels/page.js"
     ],
     "/channels/affiliates/page": [
       "static/chunks/webpack.js",
