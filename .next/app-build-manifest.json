@@ -11,60 +11,60 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/learn/whatis/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/learn/whatis/page.js"
-    ],
     "/download/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/download/page.js"
     ],
-    "/support/page": [
+    "/learn/whatis/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/support/page.js"
-    ],
-    "/learn/blog/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/learn/blog/page.js"
+      "static/chunks/app/learn/whatis/page.js"
     ],
     "/about/privacy/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/about/privacy/page.js"
     ],
-    "/about/tos/page": [
+    "/support/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/tos/page.js"
-    ],
-    "/about/trust/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/about/trust/page.js"
+      "static/chunks/app/support/page.js"
     ],
     "/about/audits/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/about/audits/page.js"
     ],
-    "/about/review/page": [
+    "/about/trust/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/review/page.js"
+      "static/chunks/app/about/trust/page.js"
+    ],
+    "/about/tos/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/tos/page.js"
     ],
     "/about/press/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/about/press/page.js"
     ],
+    "/learn/blog/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/learn/blog/page.js"
+    ],
     "/about/careers/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/about/careers/page.js"
+    ],
+    "/about/review/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/review/page.js"
     ],
     "/signin/page": [
       "static/chunks/webpack.js",
