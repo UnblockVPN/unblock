@@ -22,6 +22,9 @@ export default async function Navbar() {
             <Link href="/" className={s.logo} aria-label="Logo">
               <Logo />
             </Link>
+            <div className="hidden md:block ml-2 text-black dark:text-white text-4xl font-extrabold">
+              <span></span>
+            </div>
           </div>
           <div className="flex items-center space-x-8">
             <nav className={`ml-auto ${s.link}`}>
@@ -35,14 +38,12 @@ export default async function Navbar() {
                 Download
               </Link>
             </nav>
-            <Link href="/signup#auth-sign-up" className={s.link}>
-              Sign up
-            </Link>
+
             {user ? (
               <SignOutButton />
             ) : (
               <Link href="/signin" className={s.link}>
-                Log in
+                Sign up | log in
               </Link>
             )}
             <ThemeChanger />
