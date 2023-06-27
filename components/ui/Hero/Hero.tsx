@@ -7,83 +7,34 @@ import s from '../Navbar/Navbar.module.css';
 const Hero = () => {
   return (
     <>
-      <Container className="flex flex-wrap mt-2  max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8 ">
-        <div className="flex items-center text-left w-full lg:w-1/2">
+      <Container className="flex  mt-2  max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8 ">
+        <div className="flex items-center text-left w-full ">
           <div className="max-w-2xl text-black dark:text-white" >
           <h2 className="text-left text-2xl mb-4 mt-6 font-extrabold sm:text-left sm:text-2xl ">
             Protect your digital life 24/7
             </h2>
-          <h1 className="text-left text-6xl mb-10 font-extrabold sm:text-left sm:text-6xl ">
-            Free upgrade to our family plan
+          <h1 className="text-left text-6xl mb-10 font-extrabold sm:text-left sm:text-6xl whitespace-nowrap">
+            Get Premium free for 1 month
             </h1>
-{/*             <p className="max-w-2xl text-left py-5 leading-normal text-sm g:text-sm xl:text-base sm:text-left sm:text-base text-black dark:text-white">
-            UnblockVPN family plan supports 4 devices, offer applies to new and existing customers, available for a limited time&nbsp;
-            <a
-              className="text-zinc-500 dark:text-zinc-200 underline"
-              href="https://unblockvpn.io/about/trust"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-               conditions apply
-            </a>.
-          </p> */}
 
             <p className="max-w-2xl text-left mb-10 leading-normal text-xl g:text-xl xl:text-2xl text-zinc-200 sm:text-left sm:text-2xl text-black dark:text-white">
-            Add a plan to go live, cancel any time via stripe. Join the VPN service powered by&nbsp;
-            
-            <a
-              className="text-pink-500 underline"
-              href="https://unblockvpn.io/about/trust"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-               industry leading encryption
-            </a>.
+            Only $4.99/month after. Cancel anytime.
           </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
 
-            <Link href="/order" className="{s.link} px-8 py-4 text-lg font-medium text-center bg-indigo-600 rounded-md text-white dark:text-white">
-            Get Started
+            <Link href="/order" className="{s.link} px-8 py-2 text-lg font-medium text-center dark:bg-white bg-black rounded-full text-white dark:text-black">
+            Get started
+            </Link>
+            <Link href="/order" className="{s.link} px-8 py-2 text-lg font-medium text-center dark:bg-white bg-black rounded-full text-white dark:text-black">
+            view plans
             </Link>
 
-
-              <a
-                href="https://github.com/web3templates/nextly-template/"
-                target="_blank"
-                rel="noopener"
-                className="flex items-center space-x-2 text-gray-500 dark:text-white">
-                <svg
-                  role="img"
-                  width="24"
-                  height="24"
-                  className="w-5 h-5"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <title>GitHub</title>
-                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-                </svg>
-                <span> View on Github</span>
-              </a>
             </div>
-            <div className="flex flex-col mt-4 items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row text-black dark:text-white">30-day money-back guarantee</div>
-          </div>
+            <div className="flex flex-col mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row text-black dark:text-white">Terms and conditions apply. 1 month free not available for users who have already tried Premium.</div></div>
           
         </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
-          <div className="">
-            <Image
-              src={heroImg}
-              width="616"
-              height="617"
-              className={"object-cover"}
-              alt="Hero Illustration"
-              loading="eager"
-              placeholder="blur"
-            />
-          </div>
-        </div>
+
       </Container>
       <Container>
         <div className="flex flex-col justify-center">

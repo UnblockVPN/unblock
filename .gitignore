@@ -29,13 +29,4 @@ out/
 .bash_history
 .vimrc
 .next/*/
-.next/app-build-manifest.json
-.next/app-build-manifest.json
-.next/cache/webpack/client-development/index.pack
-.next/cache/webpack/server-development/index.pack
-.next/server/app-paths-manifest.json
-.next/server/client-reference-manifest.js
-.next/server/client-reference-manifest.json
-.next/server/webpack-runtime.js
-.next/static/chunks/app/layout.js
-.next/static/chunks/webpack.js
+
