@@ -14,7 +14,7 @@ const Hero = () => {
             Protect your digital life 24/7
             </h2>
           <h1 className="text-left text-6xl mb-10 font-extrabold sm:text-left sm:text-6xl whitespace-nowrap">
-            Get Premium free for 1 month
+            Get Premium VPN free for 1 month
             </h1>
 
             <p className="max-w-2xl text-left mb-10 leading-normal text-xl g:text-xl xl:text-2xl text-zinc-200 sm:text-left sm:text-2xl text-black dark:text-white">
