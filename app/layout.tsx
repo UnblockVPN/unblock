@@ -57,7 +57,7 @@ export default function RootLayout({
         <Providers>
       <body className="bg-white dark:bg-black loading ">
         <SupabaseProvider>
-          {/* @ts-expect-error */}
+
           <Navbar />
           <main
             id="skip"
