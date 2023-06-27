@@ -17,7 +17,7 @@ const Hero = () => {
             Get Premium VPN free for 1 month
             </h1>
 
-            <p className="max-w-2xl text-left mb-10 leading-normal text-xl g:text-xl xl:text-2xl text-zinc-200 sm:text-left sm:text-2xl text-black dark:text-white">
+            <p className="max-w-2xl text-left mb-10 leading-normal text-xl g:text-xl xl:text-2xl sm:text-left sm:text-2xl text-black dark:text-white">
             Only $4.99/month after. Cancel anytime.
           </p>
 
