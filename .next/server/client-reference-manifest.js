@@ -758,6 +758,170 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
+    "(app-client)/./app/supabase-provider.tsx": {
+      "*": {
+        "id": "(sc_client)/./app/supabase-provider.tsx",
+        "name": "*",
+        "chunks": [
+          "app/signup/page:static/chunks/app/signup/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/supabase-provider.tsx",
+        "name": "",
+        "chunks": [
+          "app/signup/page:static/chunks/app/signup/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/supabase-provider.tsx",
+        "name": "default",
+        "chunks": [
+          "app/signup/page:static/chunks/app/signup/page.js"
+        ],
+        "async": false
+      },
+      "useSupabase": {
+        "id": "(sc_client)/./app/supabase-provider.tsx",
+        "name": "useSupabase",
+        "chunks": [
+          "app/signup/page:static/chunks/app/signup/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/DarkSwitch.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/DarkSwitch.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/DarkSwitch.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/DarkSwitch.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/Providers.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/Providers.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/Providers.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "Providers": {
+        "id": "(sc_client)/./components/Providers.tsx",
+        "name": "Providers",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/icons/Logo.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/icons/Logo.tsx",
+        "name": "*",
+        "chunks": [
+          "app/signup/page:static/chunks/app/signup/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/icons/Logo.tsx",
+        "name": "",
+        "chunks": [
+          "app/signup/page:static/chunks/app/signup/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/icons/Logo.tsx",
+        "name": "default",
+        "chunks": [
+          "app/signup/page:static/chunks/app/signup/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/ui/Navbar/SignOutButton.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/ui/Navbar/SignOutButton.tsx",
+        "name": "*",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/ui/Navbar/SignOutButton.tsx",
+        "name": "",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/ui/Navbar/SignOutButton.tsx",
+        "name": "default",
+        "chunks": [
+          "app/layout:static/chunks/app/layout.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "default",
+        "chunks": [
+          "app/page:static/chunks/app/page.js"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./public/couple_02.png": {
       "*": {
         "id": "(sc_client)/./public/couple_02.png",
@@ -806,32 +970,6 @@ self.__RSC_MANIFEST={
         "name": "default",
         "chunks": [
           "app/page:static/chunks/app/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./node_modules/next/dist/client/link.js": {
-      "*": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "*",
-        "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "",
-        "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
-        "name": "default",
-        "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
         ],
         "async": false
       }
@@ -982,62 +1120,80 @@ self.__RSC_MANIFEST={
         "async": false
       }
     },
-    "(app-client)/./app/supabase-provider.tsx": {
+    "(app-client)/./components/Pricing.tsx": {
       "*": {
-        "id": "(sc_client)/./app/supabase-provider.tsx",
+        "id": "(sc_client)/./components/Pricing.tsx",
         "name": "*",
         "chunks": [
-          "app/signin/page:static/chunks/app/signin/page.js"
+          "app/order/page:static/chunks/app/order/page.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./app/supabase-provider.tsx",
+        "id": "(sc_client)/./components/Pricing.tsx",
         "name": "",
         "chunks": [
-          "app/signin/page:static/chunks/app/signin/page.js"
+          "app/order/page:static/chunks/app/order/page.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./app/supabase-provider.tsx",
+        "id": "(sc_client)/./components/Pricing.tsx",
         "name": "default",
         "chunks": [
-          "app/signin/page:static/chunks/app/signin/page.js"
-        ],
-        "async": false
-      },
-      "useSupabase": {
-        "id": "(sc_client)/./app/supabase-provider.tsx",
-        "name": "useSupabase",
-        "chunks": [
-          "app/signin/page:static/chunks/app/signin/page.js"
+          "app/order/page:static/chunks/app/order/page.js"
         ],
         "async": false
       }
     },
-    "(app-client)/./components/ui/Navbar/SignOutButton.tsx": {
+    "(app-client)/./components/ui/Button/Button.tsx": {
       "*": {
-        "id": "(sc_client)/./components/ui/Navbar/SignOutButton.tsx",
+        "id": "(sc_client)/./components/ui/Button/Button.tsx",
         "name": "*",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/order/page:static/chunks/app/order/page.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./components/ui/Navbar/SignOutButton.tsx",
+        "id": "(sc_client)/./components/ui/Button/Button.tsx",
         "name": "",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/order/page:static/chunks/app/order/page.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./components/ui/Navbar/SignOutButton.tsx",
+        "id": "(sc_client)/./components/ui/Button/Button.tsx",
         "name": "default",
         "chunks": [
-          "app/layout:static/chunks/app/layout.js"
+          "app/order/page:static/chunks/app/order/page.js"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./components/faq.tsx": {
+      "*": {
+        "id": "(sc_client)/./components/faq.tsx",
+        "name": "*",
+        "chunks": [
+          "app/learn/whatis/page:static/chunks/app/learn/whatis/page.js"
+        ],
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./components/faq.tsx",
+        "name": "",
+        "chunks": [
+          "app/learn/whatis/page:static/chunks/app/learn/whatis/page.js"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./components/faq.tsx",
+        "name": "default",
+        "chunks": [
+          "app/learn/whatis/page:static/chunks/app/learn/whatis/page.js"
         ],
         "async": false
       }
@@ -1073,7 +1229,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "*",
         "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
+          "app/signup/page:static/chunks/app/signup/page.js"
         ],
         "async": false
       },
@@ -1081,7 +1237,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "",
         "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
+          "app/signup/page:static/chunks/app/signup/page.js"
         ],
         "async": false
       },
@@ -1089,7 +1245,7 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "suspense",
         "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
+          "app/signup/page:static/chunks/app/signup/page.js"
         ],
         "async": false
       },
@@ -1097,85 +1253,33 @@ self.__RSC_MANIFEST={
         "id": "(sc_client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
         "name": "NoSSR",
         "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
+          "app/signup/page:static/chunks/app/signup/page.js"
         ],
         "async": false
       }
     },
-    "(app-client)/./components/Pricing.tsx": {
+    "(app-client)/./app/signup/AuthUI.tsx": {
       "*": {
-        "id": "(sc_client)/./components/Pricing.tsx",
+        "id": "(sc_client)/./app/signup/AuthUI.tsx",
         "name": "*",
         "chunks": [
-          "app/order/page:static/chunks/app/order/page.js"
+          "app/signup/page:static/chunks/app/signup/page.js"
         ],
         "async": false
       },
       "": {
-        "id": "(sc_client)/./components/Pricing.tsx",
+        "id": "(sc_client)/./app/signup/AuthUI.tsx",
         "name": "",
         "chunks": [
-          "app/order/page:static/chunks/app/order/page.js"
+          "app/signup/page:static/chunks/app/signup/page.js"
         ],
         "async": false
       },
       "default": {
-        "id": "(sc_client)/./components/Pricing.tsx",
+        "id": "(sc_client)/./app/signup/AuthUI.tsx",
         "name": "default",
         "chunks": [
-          "app/order/page:static/chunks/app/order/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./components/ui/Button/Button.tsx": {
-      "*": {
-        "id": "(sc_client)/./components/ui/Button/Button.tsx",
-        "name": "*",
-        "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./components/ui/Button/Button.tsx",
-        "name": "",
-        "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./components/ui/Button/Button.tsx",
-        "name": "default",
-        "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
-        ],
-        "async": false
-      }
-    },
-    "(app-client)/./app/account/ManageSubscriptionButton.tsx": {
-      "*": {
-        "id": "(sc_client)/./app/account/ManageSubscriptionButton.tsx",
-        "name": "*",
-        "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
-        ],
-        "async": false
-      },
-      "": {
-        "id": "(sc_client)/./app/account/ManageSubscriptionButton.tsx",
-        "name": "",
-        "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/account/ManageSubscriptionButton.tsx",
-        "name": "default",
-        "chunks": [
-          "app/account/page:static/chunks/app/account/page.js"
+          "app/signup/page:static/chunks/app/signup/page.js"
         ],
         "async": false
       }
@@ -1188,9 +1292,6 @@ self.__RSC_MANIFEST={
     ],
     "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/order/page": [
       "static/css/app/order/page.css"
-    ],
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/account/page": [
-      "static/css/app/account/page.css"
     ]
   },
   "clientModules": {
@@ -2922,6 +3023,196 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/styles/main.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/Navbar.module.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx": {
+      "id": "(app-client)/./app/supabase-provider.tsx",
+      "name": "*",
+      "chunks": [
+        "app/signup/page:static/chunks/app/signup/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx#": {
+      "id": "(app-client)/./app/supabase-provider.tsx",
+      "name": "",
+      "chunks": [
+        "app/signup/page:static/chunks/app/signup/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx#default": {
+      "id": "(app-client)/./app/supabase-provider.tsx",
+      "name": "default",
+      "chunks": [
+        "app/signup/page:static/chunks/app/signup/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx#useSupabase": {
+      "id": "(app-client)/./app/supabase-provider.tsx",
+      "name": "useSupabase",
+      "chunks": [
+        "app/signup/page:static/chunks/app/signup/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/DarkSwitch.tsx": {
+      "id": "(app-client)/./components/DarkSwitch.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/DarkSwitch.tsx#": {
+      "id": "(app-client)/./components/DarkSwitch.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/DarkSwitch.tsx#default": {
+      "id": "(app-client)/./components/DarkSwitch.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Providers.tsx": {
+      "id": "(app-client)/./components/Providers.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Providers.tsx#": {
+      "id": "(app-client)/./components/Providers.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Providers.tsx#Providers": {
+      "id": "(app-client)/./components/Providers.tsx",
+      "name": "Providers",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/icons/Logo.tsx": {
+      "id": "(app-client)/./components/icons/Logo.tsx",
+      "name": "*",
+      "chunks": [
+        "app/signup/page:static/chunks/app/signup/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/icons/Logo.tsx#": {
+      "id": "(app-client)/./components/icons/Logo.tsx",
+      "name": "",
+      "chunks": [
+        "app/signup/page:static/chunks/app/signup/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/icons/Logo.tsx#default": {
+      "id": "(app-client)/./components/icons/Logo.tsx",
+      "name": "default",
+      "chunks": [
+        "app/signup/page:static/chunks/app/signup/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/SignOutButton.tsx": {
+      "id": "(app-client)/./components/ui/Navbar/SignOutButton.tsx",
+      "name": "*",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/SignOutButton.tsx#": {
+      "id": "(app-client)/./components/ui/Navbar/SignOutButton.tsx",
+      "name": "",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/SignOutButton.tsx#default": {
+      "id": "(app-client)/./components/ui/Navbar/SignOutButton.tsx",
+      "name": "default",
+      "chunks": [
+        "app/layout:static/chunks/app/layout.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/esm/client/link.js": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/esm/client/link.js#": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/esm/client/link.js#default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/page:static/chunks/app/page.js"
+      ],
+      "async": false
+    },
     "/Users/davidawatere/GitHub/_saas/unblock/unblock/public/couple_02.png": {
       "id": "(app-client)/./public/couple_02.png",
       "name": "*",
@@ -2991,54 +3282,6 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "app/page:static/chunks/app/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/esm/client/link.js": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "*",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/client/link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/esm/client/link.js#": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/client/link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/node_modules/next/dist/esm/client/link.js#default": {
-      "id": "(app-client)/./node_modules/next/dist/client/link.js",
-      "name": "default",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
       ],
       "async": false
     },
@@ -3330,73 +3573,89 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/styles/main.css#": {
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.module.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
-        "static/css/app/layout.css"
+        "static/css/app/order/page.css"
       ]
     },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/Navbar.module.css#": {
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/LoadingDots/LoadingDots.module.css#": {
       "id": "null",
       "name": "default",
       "chunks": [
-        "static/css/app/layout.css"
+        "static/css/app/order/page.css"
       ]
     },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx": {
-      "id": "(app-client)/./app/supabase-provider.tsx",
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx": {
+      "id": "(app-client)/./components/Pricing.tsx",
       "name": "*",
       "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
+        "app/order/page:static/chunks/app/order/page.js"
       ],
       "async": false
     },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx#": {
-      "id": "(app-client)/./app/supabase-provider.tsx",
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx#": {
+      "id": "(app-client)/./components/Pricing.tsx",
       "name": "",
       "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
+        "app/order/page:static/chunks/app/order/page.js"
       ],
       "async": false
     },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx#default": {
-      "id": "(app-client)/./app/supabase-provider.tsx",
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx#default": {
+      "id": "(app-client)/./components/Pricing.tsx",
       "name": "default",
       "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
+        "app/order/page:static/chunks/app/order/page.js"
       ],
       "async": false
     },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/supabase-provider.tsx#useSupabase": {
-      "id": "(app-client)/./app/supabase-provider.tsx",
-      "name": "useSupabase",
-      "chunks": [
-        "app/signin/page:static/chunks/app/signin/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/SignOutButton.tsx": {
-      "id": "(app-client)/./components/ui/Navbar/SignOutButton.tsx",
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.tsx": {
+      "id": "(app-client)/./components/ui/Button/Button.tsx",
       "name": "*",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/order/page:static/chunks/app/order/page.js"
       ],
       "async": false
     },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/SignOutButton.tsx#": {
-      "id": "(app-client)/./components/ui/Navbar/SignOutButton.tsx",
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.tsx#": {
+      "id": "(app-client)/./components/ui/Button/Button.tsx",
       "name": "",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/order/page:static/chunks/app/order/page.js"
       ],
       "async": false
     },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Navbar/SignOutButton.tsx#default": {
-      "id": "(app-client)/./components/ui/Navbar/SignOutButton.tsx",
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.tsx#default": {
+      "id": "(app-client)/./components/ui/Button/Button.tsx",
       "name": "default",
       "chunks": [
-        "app/layout:static/chunks/app/layout.js"
+        "app/order/page:static/chunks/app/order/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/faq.tsx": {
+      "id": "(app-client)/./components/faq.tsx",
+      "name": "*",
+      "chunks": [
+        "app/learn/whatis/page:static/chunks/app/learn/whatis/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/faq.tsx#": {
+      "id": "(app-client)/./components/faq.tsx",
+      "name": "",
+      "chunks": [
+        "app/learn/whatis/page:static/chunks/app/learn/whatis/page.js"
+      ],
+      "async": false
+    },
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/faq.tsx#default": {
+      "id": "(app-client)/./components/faq.tsx",
+      "name": "default",
+      "chunks": [
+        "app/learn/whatis/page:static/chunks/app/learn/whatis/page.js"
       ],
       "async": false
     },
@@ -3428,7 +3687,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "*",
       "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
+        "app/signup/page:static/chunks/app/signup/page.js"
       ],
       "async": false
     },
@@ -3436,7 +3695,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "*",
       "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
+        "app/signup/page:static/chunks/app/signup/page.js"
       ],
       "async": false
     },
@@ -3444,7 +3703,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "",
       "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
+        "app/signup/page:static/chunks/app/signup/page.js"
       ],
       "async": false
     },
@@ -3452,7 +3711,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "",
       "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
+        "app/signup/page:static/chunks/app/signup/page.js"
       ],
       "async": false
     },
@@ -3460,7 +3719,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "suspense",
       "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
+        "app/signup/page:static/chunks/app/signup/page.js"
       ],
       "async": false
     },
@@ -3468,7 +3727,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "suspense",
       "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
+        "app/signup/page:static/chunks/app/signup/page.js"
       ],
       "async": false
     },
@@ -3476,7 +3735,7 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "NoSSR",
       "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
+        "app/signup/page:static/chunks/app/signup/page.js"
       ],
       "async": false
     },
@@ -3484,95 +3743,31 @@ self.__RSC_MANIFEST={
       "id": "(app-client)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-no-ssr.js",
       "name": "NoSSR",
       "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
+        "app/signup/page:static/chunks/app/signup/page.js"
       ],
       "async": false
     },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/order/page.css",
-        "static/css/app/account/page.css"
-      ]
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/LoadingDots/LoadingDots.module.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/order/page.css",
-        "static/css/app/account/page.css"
-      ]
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx": {
-      "id": "(app-client)/./components/Pricing.tsx",
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/signup/AuthUI.tsx": {
+      "id": "(app-client)/./app/signup/AuthUI.tsx",
       "name": "*",
       "chunks": [
-        "app/order/page:static/chunks/app/order/page.js"
+        "app/signup/page:static/chunks/app/signup/page.js"
       ],
       "async": false
     },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx#": {
-      "id": "(app-client)/./components/Pricing.tsx",
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/signup/AuthUI.tsx#": {
+      "id": "(app-client)/./app/signup/AuthUI.tsx",
       "name": "",
       "chunks": [
-        "app/order/page:static/chunks/app/order/page.js"
+        "app/signup/page:static/chunks/app/signup/page.js"
       ],
       "async": false
     },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/Pricing.tsx#default": {
-      "id": "(app-client)/./components/Pricing.tsx",
+    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/signup/AuthUI.tsx#default": {
+      "id": "(app-client)/./app/signup/AuthUI.tsx",
       "name": "default",
       "chunks": [
-        "app/order/page:static/chunks/app/order/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.tsx": {
-      "id": "(app-client)/./components/ui/Button/Button.tsx",
-      "name": "*",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.tsx#": {
-      "id": "(app-client)/./components/ui/Button/Button.tsx",
-      "name": "",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/components/ui/Button/Button.tsx#default": {
-      "id": "(app-client)/./components/ui/Button/Button.tsx",
-      "name": "default",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/account/ManageSubscriptionButton.tsx": {
-      "id": "(app-client)/./app/account/ManageSubscriptionButton.tsx",
-      "name": "*",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/account/ManageSubscriptionButton.tsx#": {
-      "id": "(app-client)/./app/account/ManageSubscriptionButton.tsx",
-      "name": "",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
-      ],
-      "async": false
-    },
-    "/Users/davidawatere/GitHub/_saas/unblock/unblock/app/account/ManageSubscriptionButton.tsx#default": {
-      "id": "(app-client)/./app/account/ManageSubscriptionButton.tsx",
-      "name": "default",
-      "chunks": [
-        "app/account/page:static/chunks/app/account/page.js"
+        "app/signup/page:static/chunks/app/signup/page.js"
       ],
       "async": false
     }

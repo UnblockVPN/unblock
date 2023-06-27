@@ -1,15 +1,14 @@
 import Link from 'next/link';
 import { createServerSupabaseClient } from '@/app/supabase-server';
-
 import Logo from '@/components/icons/Logo';
 import SignOutButton from './SignOutButton';
-
 import s from './Navbar.module.css';
+import ThemeChanger from '@/components/DarkSwitch';
 
 export default async function Navbar() {
   const supabase = createServerSupabaseClient();
   const {
-    data: { user }
+    data: { user },
   } = await supabase.auth.getUser();
 
   return (
@@ -17,38 +16,36 @@ export default async function Navbar() {
       <a href="#skip" className="sr-only focus:not-sr-only">
         Skip to content
       </a>
-      <div className="max-w-6xl px-6 mx-auto">
+      <div className="max-w-6xl px-6 mx-auto bg-white dark:bg-black">
         <div className="relative flex flex-row justify-between py-4 align-center md:py-6">
-          <div className="flex items-center flex-1">
+          <div className="flex items-center">
             <Link href="/" className={s.logo} aria-label="Logo">
               <Logo />
             </Link>
-            <nav className="hidden ml-6 space-x-2 lg:block">
-              <Link href="/learn/whatis" className={s.link}>
-                What is VPN
-              </Link>
-              <Link href="/download" className={s.link}>
-                Download VPN
+          </div>
+          <div className="flex items-center space-x-8">
+            <nav className={`ml-auto ${s.link}`}>
+              <Link href="/order" className={s.link}>
+                Premium
               </Link>
               <Link href="/support" className={s.link}>
                 Support
               </Link>
-              <Link href="/learn/blog" className={s.link}>
-                Blog
+              <Link href="/download" className={s.link}>
+                Download
               </Link>
             </nav>
-          </div>
-          <div className="flex justify-end flex-1 space-x-8">
+            <Link href="/signup#auth-sign-up" className={s.link}>
+              Sign up
+            </Link>
             {user ? (
               <SignOutButton />
             ) : (
               <Link href="/signin" className={s.link}>
-                My Account
+                Log in
               </Link>
             )}
-              <Link href="/order" className={s.link}>
-                Get Started
-              </Link>
+            <ThemeChanger />
           </div>
         </div>
       </div>

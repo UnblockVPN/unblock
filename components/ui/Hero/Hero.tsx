@@ -7,28 +7,28 @@ import s from '../Navbar/Navbar.module.css';
 const Hero = () => {
   return (
     <>
-      <Container className="flex flex-wrap mt-2  max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+      <Container className="flex flex-wrap mt-2  max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8 ">
         <div className="flex items-center text-left w-full lg:w-1/2">
-          <div className="max-w-2xl">
-          <h2 className="text-left text-2xl mb-6 font-extrabold text-white sm:text-left sm:text-2xl">
+          <div className="max-w-2xl text-black dark:text-white" >
+          <h2 className="text-left text-2xl mb-4 mt-6 font-extrabold sm:text-left sm:text-2xl ">
             Protect your digital life 24/7
             </h2>
-          <h1 className="text-left text-6xl font-extrabold text-white sm:text-left sm:text-6xl">
+          <h1 className="text-left text-6xl mb-10 font-extrabold sm:text-left sm:text-6xl ">
             Free upgrade to our family plan
             </h1>
-            <p className="max-w-2xl text-left py-5 leading-normal text-sm g:text-sm xl:text-base text-zinc-200 sm:text-left sm:text-base">
+{/*             <p className="max-w-2xl text-left py-5 leading-normal text-sm g:text-sm xl:text-base sm:text-left sm:text-base text-black dark:text-white">
             UnblockVPN family plan supports 4 devices, offer applies to new and existing customers, available for a limited time&nbsp;
             <a
-              className="text-zinc-200 underline"
+              className="text-zinc-500 dark:text-zinc-200 underline"
               href="https://unblockvpn.io/about/trust"
               rel="noopener noreferrer"
               target="_blank"
             >
                conditions apply
             </a>.
-          </p>
+          </p> */}
 
-            <p className="max-w-2xl text-left mb-6 leading-normal text-xl g:text-xl xl:text-2xl text-zinc-200 sm:text-left sm:text-2xl">
+            <p className="max-w-2xl text-left mb-10 leading-normal text-xl g:text-xl xl:text-2xl text-zinc-200 sm:text-left sm:text-2xl text-black dark:text-white">
             Add a plan to go live, cancel any time via stripe. Join the VPN service powered by&nbsp;
             
             <a
@@ -43,7 +43,7 @@ const Hero = () => {
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
 
-            <Link href="/order" className="{s.link} px-8 py-4 text-lg font-medium text-center bg-indigo-600 rounded-md">
+            <Link href="/order" className="{s.link} px-8 py-4 text-lg font-medium text-center bg-indigo-600 rounded-md text-white dark:text-white">
             Get Started
             </Link>
 
@@ -52,7 +52,7 @@ const Hero = () => {
                 href="https://github.com/web3templates/nextly-template/"
                 target="_blank"
                 rel="noopener"
-                className="flex items-center space-x-2 text-gray-500 dark:text-gray-400">
+                className="flex items-center space-x-2 text-gray-500 dark:text-white">
                 <svg
                   role="img"
                   width="24"
@@ -67,7 +67,7 @@ const Hero = () => {
                 <span> View on Github</span>
               </a>
             </div>
-            <div className="flex flex-col mt-4 items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">30-day money-back guarantee</div>
+            <div className="flex flex-col mt-4 items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row text-black dark:text-white">30-day money-back guarantee</div>
           </div>
           
         </div>

@@ -170,7 +170,16 @@ export default function Pricing({
           Free upgrade to our family plan
           </h1>
           <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
-            Add a plan to go live, free family plan upgrade auto applied, cancel any time via stripe.
+            Add a plan to go live, free family plan upgrade auto applied, cancel any time via stripe. Join the VPN service powered by&nbsp;
+            
+            <a
+              className="text-pink-500 underline"
+              href="https://unblockvpn.io/about/trust"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+               industry leading encryption
+            </a>.
           </p>
           <div className="relative self-center mt-6 bg-zinc-900 rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
             {intervals.includes('month') && (
@@ -240,7 +249,7 @@ export default function Pricing({
                   <Button
                     variant="slim"
                     type="button"
-                    //disabled={!session}
+                    disabled={!session}
                     loading={priceIdLoading === price.id}
                     onClick={() => handleCheckout(price)}
                     className="block w-full py-2 mt-8 text-sm font-semibold text-center text-white rounded-md hover:bg-zinc-900"

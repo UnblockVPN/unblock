@@ -2,7 +2,6 @@
 
 import { useSupabase } from '@/app/supabase-provider';
 import { useRouter } from 'next/navigation';
-
 import s from './Navbar.module.css';
 
 export default function SignOutButton() {

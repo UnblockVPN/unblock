@@ -1,9 +1,38 @@
-.root {
+/* .root {
   @apply sticky top-0 bg-black z-40 transition-all duration-150 h-16 md:h-20;
 }
 
 .link {
-  @apply inline-flex items-center leading-6 font-medium transition ease-in-out duration-75 cursor-pointer text-zinc-200 rounded-md p-1;
+  @apply text-black dark:text-white inline-flex items-center leading-6 font-medium transition ease-in-out duration-75 cursor-pointer text-zinc-200 rounded-md p-1;
+}
+
+.link:hover {
+  @apply text-zinc-100;
+}
+
+.link:focus {
+  @apply outline-none text-zinc-100 ring-2 ring-pink-500 ring-opacity-50;
+}
+
+.logo {
+  @apply cursor-pointer rounded-full transform duration-100 ease-in-out;
+}
+ */
+
+ /* Navbar.module.css */
+
+ .root {
+  @apply sticky top-0 bg-white dark:bg-black z-40 h-16 md:h-20;
+  transition: background-color 0s ease;
+}
+
+.dark .root {
+  @apply bg-black;
+}
+
+
+.link {
+  @apply inline-flex text-black dark:text-white items-center leading-6 font-medium transition ease-in-out duration-75 cursor-pointer  rounded-md p-1;
 }
 
 .link:hover {

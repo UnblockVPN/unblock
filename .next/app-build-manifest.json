@@ -1,25 +1,31 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/download/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/download/page.js"
+      "static/chunks/app/page.js"
+    ],
+    "/order/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/order/page.css",
+      "static/chunks/app/order/page.js"
     ],
     "/learn/whatis/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/learn/whatis/page.js"
+    ],
+    "/download/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/download/page.js"
     ],
     "/support/page": [
       "static/chunks/webpack.js",
@@ -31,102 +37,30 @@
       "static/chunks/main-app.js",
       "static/chunks/app/learn/blog/page.js"
     ],
-    "/about/privacy/page": [
+    "/signin/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/privacy/page.js"
+      "static/chunks/app/signin/page.js"
     ],
-    "/about/tos/page": [
+    "/signup/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/tos/page.js"
-    ],
-    "/about/trust/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/about/trust/page.js"
+      "static/chunks/app/signup/page.js"
     ],
     "/about/audits/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/about/audits/page.js"
     ],
-    "/about/review/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/about/review/page.js"
-    ],
-    "/about/press/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/about/press/page.js"
-    ],
-    "/about/careers/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/about/careers/page.js"
-    ],
-    "/signin/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/signin/page.js"
-    ],
-    "/countries/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/countries/page.js"
-    ],
-    "/channels/scholarships/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/channels/scholarships/page.js"
-    ],
-    "/countries/eu/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/countries/eu/page.js"
-    ],
-    "/countries/uk/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/countries/uk/page.js"
-    ],
-    "/order/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/order/page.css",
-      "static/chunks/app/order/page.js"
-    ],
     "/channels/influencers/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/channels/influencers/page.js"
     ],
-    "/channels/page": [
+    "/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/channels/page.js"
-    ],
-    "/channels/affiliates/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/channels/affiliates/page.js"
-    ],
-    "/account/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/account/page.css",
-      "static/chunks/app/account/page.js"
-    ],
-    "/countries/usa/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/countries/usa/page.js"
-    ],
-    "/download/windows/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/download/windows/page.js"
+      "static/chunks/app/about/page.js"
     ]
   }
 }

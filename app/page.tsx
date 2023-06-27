@@ -23,7 +23,7 @@ export default async function About() {
 
   const user = session?.user;
 
-  
+
   const subscriptionPrice =
     subscription &&
     new Intl.NumberFormat('en-US', {
