@@ -20,7 +20,7 @@ const Hero = () => {
               Only $4.99/month after. Cancel anytime.
             </p>
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <Link href="/order" className={`${s.link} px-8 py-2 text-lg font-medium text-center dark:bg-white bg-black rounded-full text-white dark:text-black`}>
+              <Link href="/order" className={`${s.link} px-8 py-2 text-lg font-medium text-center dark:bg-white bg-black rounded-full sm:text-white dark:text-black`}>
                 Get started
               </Link>
               <Link href="/order" className={`${s.link} px-8 py-2 text-lg font-medium text-center dark:bg-white bg-black rounded-full text-white dark:text-black`}>
