@@ -43,7 +43,7 @@ export default async function Navbar() {
               <SignOutButton />
             ) : (
               <Link href="/signin" className={s.link}>
-                Sign up | log in
+                Log in
               </Link>
             )}
             <ThemeChanger />

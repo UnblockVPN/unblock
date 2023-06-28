@@ -13,7 +13,7 @@ const Hero = () => {
             <h2 className="text-left text-2xl mb-4 mt-6 font-extrabold sm:text-2xl">
               Protect your digital life 24/7
             </h2>
-            <h1 className="text-left text-4xl mb-10 font-extrabold sm:text-5xl whitespace-nowrap">
+            <h1 className="text-left text-4xl mb-10 font-extrabold sm:text-4xl whitespace-nowrap">
               Get Premium VPN free for 1 month
             </h1>
             <p className="text-left mb-10 leading-normal text-xl sm:text-2xl">
@@ -35,7 +35,7 @@ const Hero = () => {
       </Container>
 
      <Container className="mx-auto max-w-[1920px] flex text-black dark:text-white flex-col items-center py-4 sm:py-24 sm:px-6">
-        <div className="text-5xl text-center mb-10 font-extrabold sm:text-5xl whitespace-nowrap">
+        <div className="text-4xl text-center mb-10 font-extrabold sm:text-4xl whitespace-nowrap">
           Why go premium?
         </div>
         <ul className="flex flex-col space-y-4">
