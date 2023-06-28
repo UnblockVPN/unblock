@@ -7,9 +7,12 @@ import s from '../Navbar/Navbar.module.css';
 const Hero = () => {
   return (
     <>
-      <Container className="flex  mt-2  max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8 ">
-        <div className="flex items-center text-left w-full ">
-          <div className="max-w-2xl text-black dark:text-white" >
+
+
+
+      <Container className="mx-auto max-w-[1920px]  bg-blue-400  py-8 sm:py-24 sm:px-6  ">
+        <div className="flex flex-col mt-2  max-w-6xl flex items-center px-4 text-left w-full ">
+          <div className="max-w-2xl  " >
           <h2 className="text-left text-2xl mb-4 mt-6 font-extrabold sm:text-left sm:text-2xl ">
             Protect your digital life 24/7
             </h2>
@@ -17,7 +20,7 @@ const Hero = () => {
             Get Premium VPN free for 1 month
             </h1>
 
-            <p className="max-w-2xl text-left mb-10 leading-normal text-xl g:text-xl xl:text-2xl sm:text-left sm:text-2xl text-black dark:text-white">
+            <p className=" text-left mb-10 leading-normal text-xl g:text-xl xl:text-2xl sm:text-left sm:text-2xl">
             Only $4.99/month after. Cancel anytime.
           </p>
 
@@ -31,7 +34,8 @@ const Hero = () => {
             </Link>
 
             </div>
-            <div className="flex flex-col mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row text-black dark:text-white">Terms and conditions apply. 1 month free not available for users who have already tried Premium.</div></div>
+
+            <div className="flex flex-col mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">Terms and conditions apply. 1 month free not available for users who have already tried Premium.</div></div>
           
         </div>
 

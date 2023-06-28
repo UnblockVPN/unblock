@@ -22,12 +22,12 @@
  /* Navbar.module.css */
 
  .root {
-  @apply sticky top-0 bg-white dark:bg-black z-40 h-16 md:h-20;
+  @apply sticky top-0 pb-0 bg-white dark:bg-black z-40 h-16 md:h-24;
   transition: background-color 0s ease;
 }
 
 .dark .root {
-  @apply bg-black;
+  @apply pb-0 bg-black;
 }
 
 
@@ -36,11 +36,11 @@
 }
 
 .link:hover {
-  @apply text-zinc-100;
+  @apply text-zinc-500;
 }
 
 .link:focus {
-  @apply outline-none text-zinc-100 ring-2 ring-pink-500 ring-opacity-50;
+  @apply outline-none text-zinc-500 ring-2  ring-opacity-50;
 }
 
 .logo {

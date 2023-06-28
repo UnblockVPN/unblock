@@ -17,7 +17,7 @@ export default async function Navbar() {
         Skip to content
       </a>
       <div className="max-w-6xl px-6 mx-auto bg-white dark:bg-black">
-        <div className="relative flex flex-row justify-between py-4 align-center md:py-6">
+        <div className="relative flex py-0 flex-row justify-between align-center md:py-6">
           <div className="flex items-center">
             <Link href="/" className={s.logo} aria-label="Logo">
               <Logo />
