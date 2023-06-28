@@ -7,7 +7,7 @@ import s from '../Navbar/Navbar.module.css';
 const Hero = () => {
   return (
     <>
-      <Container className="mx-auto max-w-[1920px] bg-blue-400 py-4 sm:py-24 sm:px-6">
+      <Container className="mx-auto max-w-[1920px] bg-blue-400 py-4 sm:py-24 sm:px-24">
         <div className="flex flex-col mt-2 max-w-6xl items-center px-4 text-left w-full">
           <div className="max-w-2xl">
             <h2 className="text-left text-2xl mb-4 mt-6 font-extrabold sm:text-2xl">
@@ -23,7 +23,7 @@ const Hero = () => {
               <Link href="/order" className="px-8 py-2 font-medium text-center dark:bg-white bg-black rounded-full sm:text-white dark:text-black">
                 Get started
               </Link>
-              <Link href="/order" className="px-8 py-2 font-medium text-center dark:bg-white bg-black rounded-full sm:text-white dark:text-black">
+              <Link href="/order" className="px-8 py-2 font-medium text-center dark:bg-white bg-black rounded-full text-white dark:text-black">
                 View plans
               </Link>
             </div>
