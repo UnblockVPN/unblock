@@ -34,11 +34,11 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
               Only $9.99/month after. Cancel anytime.
             </p>
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <Link href="/order" className="px-8 py-2 font-medium text-center dark:bg-white bg-black rounded-full sm:text-white dark:text-black">
-                Get started
+              <Link href="/order" className="px-6 py-3 border border-black border-2 font-medium text-center bg-black rounded-full sm:text-white">
+                GET STARTED
               </Link>
-              <Link href="/order" className="px-8 py-2 font-medium text-center dark:bg-white bg-black rounded-full text-white dark:text-black">
-                View plans
+              <Link href="#offer" className="bg-blue-600 border border-white border-2 px-6 py-3 font-medium text-center rounded-full text-white ">
+                VIEW PLANS
               </Link>
             </div>
             <div className="flex flex-col mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
@@ -89,7 +89,7 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
       </Container>
       
 
-
+      <section id="offer">
       <Container className="mx-auto max-w-[1920px] flex bg-gray-200 text-black flex-col items-center py-4 sm:py-24 sm:px-6">
           <div className="text-black text-5xl text-center  font-extrabold sm:text-5xl whitespace-nowrap">
             Pick your premium
@@ -101,7 +101,7 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
             <Pricing session={session} user={user} subscription={subscription} products={products} />
           </div>
 </Container>
-
+</section>
 
 
     </>
