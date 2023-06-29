@@ -16,15 +16,13 @@ export default async function Navbar() {
       <a href="#skip" className="sr-only focus:not-sr-only">
         Skip to content
       </a>
-      <div className="max-w-6xl px-24 mx-auto bg-white dark:bg-black">
-        <div className="relative flex py-0 flex-row justify-between align-center md:py-6">
-          <div className="flex items-center">
-            <Link href="/" className={s.logo} aria-label="Logo">
+      <div className="mx-auto max-w-[1920px]  sm:px-24 flex flex-col px-4 text-left w-full bg-white dark:bg-black">
+        <div className=" flex  justify-between ">
+          <div >
+            <a href="/" className={s.logo} aria-label="Logo">
               <Logo />
-            </Link>
-            <div className="hidden md:block ml-2 text-black dark:text-white text-4xl font-extrabold">
-              <span></span>
-            </div>
+            </a>
+            
           </div>
           <div className="flex items-center space-x-8">
             <nav className={`ml-auto ${s.link}`}>

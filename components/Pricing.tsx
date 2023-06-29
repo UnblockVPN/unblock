@@ -74,7 +74,7 @@ export default function Pricing({
 
   if (!products.length)
     return (
-      <section className="bg-black">
+      <section>
         <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
           <div className="sm:flex sm:flex-col sm:align-center"></div>
           <p className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
@@ -95,12 +95,12 @@ export default function Pricing({
     );
 
   if (products.length === 1)
-    return (
-      <section className="bg-black">
+  return (
+      <section className="">
         <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
           <div className="sm:flex sm:flex-col sm:align-center">
             <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
-              Pricing Plans
+              Pricing Plans...
             </h1>
             <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
               Start building for free, then add a site plan to go live. Account
@@ -113,7 +113,7 @@ export default function Pricing({
                 </div>
               </div>
             </div>
-            <div className="mt-6 space-y-4 sm:mt-12 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-3">
+            <div>
               {products[0].prices?.map((price) => {
                 const priceString =
                   price.unit_amount &&
@@ -162,14 +162,12 @@ export default function Pricing({
       </section>
     );
 
-  return (
-    <section className="bg-black">
-      <div className="max-w-6xl px-4 py-8 mx-auto sm:py-24 sm:px-6 lg:px-8">
+//ACTIVE OFFER
+    return (
+    <section className="">
+      <div className="max-w-6xl px-4 py-2 mx-auto sm:py-2 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
-          <h1 className="text-4xl mb-6 font-extrabold text-white sm:text-center sm:text-6xl">
-          Free upgrade to our family plan
-          </h1>
-          <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
+          <p className="max-w-2xl m-auto mt-5 text-xl text-black sm:text-center sm:text-2xl">
             Add a plan to go live, free family plan upgrade auto applied, cancel any time via stripe. Join the VPN service powered by&nbsp;
             
             <a
@@ -181,7 +179,7 @@ export default function Pricing({
                industry leading encryption
             </a>.
           </p>
-          <div className="relative self-center mt-6 bg-zinc-900 rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
+          <div className="relative self-center mt-6 bg-zinc-900 text-white rounded-lg p-0.5 flex sm:mt-8 border border-zinc-800">
             {intervals.includes('month') && (
               <button
                 onClick={() => setBillingInterval('month')}
@@ -210,7 +208,13 @@ export default function Pricing({
             )}
           </div>
         </div>
-        <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:mx-0 xl:grid-cols-3">
+
+
+
+
+        {/* ACTIVE OFFER */}
+        <div className="">
+        <div className="relative flex flex-wrap mt-12 mx-auto w-3/4 max-w-2xl gap-8 justify-center items-center sm:justify-start sm:grid sm:grid-cols-1">
           {products.map((product) => {
             const price = product?.prices?.find(
               (price) => price.interval === billingInterval
@@ -237,19 +241,19 @@ export default function Pricing({
                   <h2 className="text-2xl font-semibold leading-6 text-white">
                     {product.name}
                   </h2>
-                  <p className="mt-4 text-zinc-300">{product.description}</p>
+                  <p className="mt-4 text-white text-zinc-300">{product.description}</p>
                   <p className="mt-8">
-                    <span className="text-5xl font-extrabold white">
+                    <span className="text-white text-5xl font-extrabold white">
                       {priceString}
                     </span>
-                    <span className="text-base font-medium text-zinc-100">
+                    <span className="text-white text-base font-medium text-zinc-100">
                       /{billingInterval}
                     </span>
                   </p>
                   <Button
                     variant="slim"
                     type="button"
-                    disabled={!session}
+                    // disabled={!session}
                     loading={priceIdLoading === price.id}
                     onClick={() => handleCheckout(price)}
                     className="block w-full py-2 mt-8 text-sm font-semibold text-center text-white rounded-md hover:bg-zinc-900"
@@ -260,8 +264,10 @@ export default function Pricing({
                   </Button>
                 </div>
               </div>
+              
             );
           })}
+        </div>
         </div>
         <LogoCloud />
       </div>

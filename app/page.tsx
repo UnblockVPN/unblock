@@ -13,12 +13,14 @@ import { cookies } from 'next/headers';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
+import { getActiveProductsWithPrices } from '@/app/supabase-server';
 
 export default async function About() {
-  const [session, userDetails, subscription] = await Promise.all([
+  const [session, userDetails, subscription, products] = await Promise.all([
     getSession(),
     getUserDetails(),
-    getSubscription()
+    getSubscription(),
+    getActiveProductsWithPrices()
   ]);
 
   const user = session?.user;
@@ -62,6 +64,6 @@ export default async function About() {
   };
 
   return (
-      <Hero />
-  );
+    <Hero session={session} user={user} subscription={subscription} products={products}/>
+    );
 }

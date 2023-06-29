@@ -50,3 +50,11 @@ a {
 .height-screen-helper {
   height: calc(100vh - 80px);
 }
+.pricing-container {
+  margin-top: 12px; /* Adjust the top margin as needed */
+  grid-gap: 8px; /* Adjust the gap between pricing items as needed */
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* Display pricing items in a single column on small screens */
+  max-width: 4xl; /* Limit the maximum width to a specific value (e.g., 4xl) */
+  margin-left: auto; /* Center the container horizontally by pushing it to the right */
+  margin-right: auto; /* Center the container horizontally by pushing it to the left */
+}
