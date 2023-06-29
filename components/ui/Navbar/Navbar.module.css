@@ -35,7 +35,7 @@
 
 /* New classes for Hero component */
 .heroContainer {
-  @apply mx-auto max-w-[1920px] bg-blue-400 py-4 sm:py-12 sm:px-12;
+  @apply mx-auto max-w-[1920px] bg-blue-600 py-4 sm:py-12 sm:px-12;
 }
 
 .heroTitle {

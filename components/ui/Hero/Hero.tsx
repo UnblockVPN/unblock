@@ -9,9 +9,9 @@ import s from '../Navbar/Navbar.module.css';
 const Hero = ({ session, user, subscription, products }) => {
   return (
     <>
-          <div className={`${s.heroContainer} mx-auto max-w-[1920px] bg-blue-400 py-4 `}>
+          <div className={`${s.heroContainer} mx-auto max-w-[1920px]  py-4 `}>
 
-      <Container className="mx-auto max-w-[1920px] bg-blue-400 py-4 ">
+      <Container className="mx-auto max-w-[1920px]  py-4 ">
         <div className="flex flex-col mt-2 max-w-6xl items-center px-4 text-left w-full">
           <div className="max-w-2xl">
             <h2 className="text-left text-2xl mb-4  font-extrabold sm:text-2xl">
