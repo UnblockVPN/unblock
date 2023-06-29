@@ -141,7 +141,7 @@ export default function Pricing({
                       <Button
                         variant="slim"
                         type="button"
-                        disabled={false}
+                      //  disabled={false}
                         loading={priceIdLoading === price.id}
                         onClick={() => handleCheckout(price)}
                         className="block w-full py-2 mt-12 text-sm font-semibold text-center text-white rounded-md hover:bg-zinc-900 "
