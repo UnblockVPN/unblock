@@ -1,4 +1,4 @@
-
+import { Session, User } from '@supabase/supabase-js';
 import Pricing from '@/components/Pricing';
 import Link from 'next/link';
 import Image from "next/image";
