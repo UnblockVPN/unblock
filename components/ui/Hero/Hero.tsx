@@ -6,7 +6,7 @@ import Container from '@/components/ui/Hero/Container';
 import heroImg from "../../../public/couple_02.png";
 import s from '../Navbar/Navbar.module.css';
 
-const Hero = ({ user, subscription, products }) => {
+const Hero = ({ session, user, subscription, products }) => {
   return (
     <>
           <div className={`${s.heroContainer} mx-auto max-w-[1920px] bg-blue-400 py-4 `}>
@@ -88,7 +88,7 @@ const Hero = ({ user, subscription, products }) => {
 
 
           <div className="">
-            <Pricing  user={user} subscription={subscription} products={products} />
+            <Pricing session={session} user={user} subscription={subscription} products={products} />
           </div>
 </Container>
 
