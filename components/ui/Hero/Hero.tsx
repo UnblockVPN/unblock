@@ -37,7 +37,7 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
               <Link href="/order" className="px-6 py-3 border border-black border-2 font-medium text-center bg-black rounded-full sm:text-white">
                 GET STARTED
               </Link>
-              <Link href="#offer" className="bg-blue-600 border border-white border-2 px-6 py-3 font-medium text-center rounded-full text-white ">
+              <Link href="#offer" scroll={false} className="bg-blue-600 border border-white border-2 px-6 py-3 font-medium text-center rounded-full text-white ">
                 VIEW PLANS
               </Link>
             </div>

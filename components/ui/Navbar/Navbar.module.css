@@ -20,7 +20,7 @@
 }
 
 .logo {
-  @apply py-4 sm:py-24 sm:px-24 cursor-pointer rounded-full transform duration-100 ease-in-out;
+  @apply sm:px-24  cursor-pointer ring-opacity-0 ring-0 rounded-none transform duration-100 ease-in-out;
 }
 
 @media (max-width: 1024px) {
