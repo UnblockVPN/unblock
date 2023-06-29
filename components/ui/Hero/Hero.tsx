@@ -6,7 +6,17 @@ import Container from '@/components/ui/Hero/Container';
 import heroImg from "../../../public/couple_02.png";
 import s from '../Navbar/Navbar.module.css';
 
-const Hero = ({ session, user, subscription, products }) => {
+
+
+interface Props {
+  session: Session | null;
+  user: User | null | undefined;
+  subscription: any; // Add the appropriate type for the 'subscription' prop
+  products: any[]; // Add the appropriate type for the 'products' prop
+}
+
+
+const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
   return (
     <>
           <div className={`${s.heroContainer} mx-auto max-w-[1920px]  py-4 `}>
