@@ -260,7 +260,7 @@ export default function Pricing({
                   <p className="mt-4 text-white text-zinc-300">{product.description}</p>
                  
 
-                  <div class="mt-4 w-9/10 h-px bg-gray-300"></div>
+                  <div className="mt-4 w-9/10 h-px bg-gray-300"></div>
 
 
                   <ul class="flex flex-col gap-4 mt-6">
