@@ -1,4 +1,5 @@
 import ManageSubscriptionButton from './ManageSubscriptionButton';
+import Download from '@/components/ui/Download';
 import {
   getSession,
   getUserDetails,
@@ -12,12 +13,14 @@ import { cookies } from 'next/headers';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
+import { getActiveProductsWithPrices } from '@/app/supabase-server';
 
 export default async function About() {
-  const [session, userDetails, subscription] = await Promise.all([
+  const [session, userDetails, subscription, products] = await Promise.all([
     getSession(),
     getUserDetails(),
-    getSubscription()
+    getSubscription(),
+    getActiveProductsWithPrices()
   ]);
 
   const user = session?.user;
@@ -61,25 +64,6 @@ export default async function About() {
   };
 
   return (
-    <section className="mb-32 bg-black">
-      <div className="max-w-6xl px-4 py-8 mx-auto sm:px-6 sm:pt-24 lg:px-8">
-        <div className="sm:align-center sm:flex sm:flex-col">
-          <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
-            DOWNLOAD
-          </h1>
-          <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
-            We partnered with Stripe for a simplified billing.
-          </p>
-        </div>
-      </div>
-      
-    </section>
-  );
-}
-
-interface Props {
-  title: string;
-  description?: string;
-  footer?: ReactNode;
-  children: ReactNode;
+    <Download session={session} user={user} subscription={subscription} products={products}/>
+    );
 }

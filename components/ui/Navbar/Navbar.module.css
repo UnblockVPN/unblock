@@ -54,6 +54,28 @@
   @apply mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row;
 }
 
+/* New classes for Hero component */
+.downloadContainer {
+  @apply mx-auto max-w-[1920px] bg-green-400 py-4 sm:py-12 sm:px-12;
+}
+
+.downloadTitle {
+  @apply text-left text-4xl mb-10 font-extrabold sm:text-4xl whitespace-nowrap;
+}
+
+.downloadSubtitle {
+  @apply text-left mb-10 leading-normal text-xl sm:text-2xl;
+}
+
+.downloadButton {
+  @apply px-8 py-2 font-medium text-center dark:bg-white bg-black rounded-full sm:text-white dark:text-black;
+}
+
+.downloadDisclaimer {
+  @apply mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row;
+}
+
+
 
 /* ...existing styles... */
 
