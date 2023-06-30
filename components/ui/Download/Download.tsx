@@ -46,39 +46,34 @@ const Download: React.FC<Props> = ({ session, user, subscription, products }) =>
         <div className="text-4xl text-center mb-10 font-extrabold sm:text-4xl whitespace-nowrap">
           Why go premium?
         </div>
-        <ul className="flex flex-col space-y-4 ">
-          <div className="flex flex-row space-x-4 ">
-            <div className="flex flex-col items-center ">
-              <div className="h-36 w-36"><img src="/music.png" alt="My Image" /></div>
-              <div className="ml-4">
-                <p className="font-bold text-center text-black">Stream music.</p>
-                <p className="text-black text-center text-black ">Listen like a local.</p>
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-            <div className="h-36 w-36"><img src="/play.png" alt="My Image" /></div>
-              <div className="ml-4">
-                <p className="font-bold text-center text-black">Stream movies and TV.</p>
-                <p className="text-black text-center text-black">Enjoy the entire catalog.</p>
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-            <div className="h-36 w-36"><img src="/privacy.png" alt="My Image" /></div>
-              <div className="ml-4">
-                <p className="font-bold text-center text-black">Keep your privacy.</p>
-                <p className="text-black text-center text-black">Even on mobile.</p>
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-            <div className="h-36 w-36"><img src="/bank.png" alt="My Image" /></div>
-              <div className="ml-4">
-                <p className="font-bold text-center text-black">Banking where you want.</p>
-                <p className="text-black text-center text-black">Unlocked opportunities.</p>
-              </div>
-            </div>
-          </div>
-          
-        </ul>
+        <div className="flex justify-center">
+  <ul className="flex flex-row space-x-8 justify-center items-start">
+    <li className="flex flex-col items-center">
+      <div className="w-36 h-36 flex items-center justify-center">
+        <img src="/apple.svg" alt="Apple Image" className="h-10 object-contain" />
+      </div>
+    </li>
+    <li className="flex flex-col items-center">
+      <div className="w-36 h-36 flex items-center justify-center">
+        <img src="/google-play-badge.png" alt="Play Image" className="h-10 object-contain" />
+      </div>
+    </li>
+    <li className="flex flex-col items-center">
+      <div className="w-36 h-36 flex items-center justify-center">
+        <img src="/Get_it_from_Microsoft_Badge.png" alt="Microsoft Image" className="h-10 object-contain" />
+      </div>
+    </li>
+    <li className="flex flex-col items-center">
+      <div className="w-36 h-36 flex items-center justify-center">
+        <img src="/amzn.png" alt="Amazon Image" className="h-10 object-contain" />
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
+
       </Container>
       
 

@@ -63,7 +63,7 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
               </div>
             </div>
             <div className="flex flex-col items-center">
-            <div className="h-36 w-36"><img src="/play.png" alt="My Image" /></div>
+            <div className="h-36 w-36"><img src="/movies.png" alt="My Image" /></div>
               <div className="ml-4">
                 <p className="font-bold text-center text-black">Stream movies and TV.</p>
                 <p className="text-black text-center text-black">Enjoy the entire catalog.</p>
