@@ -169,8 +169,8 @@ export default function Pricing({
     <section className="">
       <div className="max-w-6xl px-4 py-2 mx-auto sm:py-2 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
-          <p className="max-w-2xl m-auto mt-5 text-xl text-black sm:text-center sm:text-2xl">
-            Add a plan to go live, free family plan upgrade auto applied, cancel any time via stripe. Join the VPN service powered by&nbsp;
+          <p className="max-w-2xl m-auto mt-5 text-xl text-black sm:text-center sm:text-xl">
+            Add a plan to go live, cancel any time via stripe. Join the VPN service powered by&nbsp;
             
             <a
               className="text-pink-500 underline"
@@ -263,9 +263,9 @@ export default function Pricing({
                   <div className="mt-4 w-9/10 h-px bg-gray-300"></div>
 
 
-                  <ul class="flex flex-col gap-4 mt-6">
-                    <li class="flex items-center space-x-2">
-                      <div class="w-6 h-6">
+                  <ul className="flex flex-col gap-4 mt-6">
+                    <li className="flex items-center space-x-2">
+                      <div className="w-6 h-6">
                         <svg
                           role="img"
                           focusable="false"
@@ -273,15 +273,15 @@ export default function Pricing({
                           width="24"
                           viewBox="0 0 24 24"
                           aria-label=""
-                          class="text-white stroke-current"
+                          className="text-white stroke-current"
                         >
                           <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#ffffff"></polyline>
                         </svg>
                       </div>
-                      <p class="text-white">Ad-free music listening</p>
+                      <p className="text-white">Ad-free music listening</p>
                     </li>
-                    <li class="flex items-center space-x-2">
-                      <div class="w-6 h-6">
+                    <li className="flex items-center space-x-2">
+                      <div className="w-6 h-6">
                         <svg
                           role="img"
                           focusable="false"
@@ -289,15 +289,15 @@ export default function Pricing({
                           width="24"
                           viewBox="0 0 24 24"
                           aria-label=""
-                          class="text-white stroke-current"
+                          className="text-white stroke-current"
                         >
                           <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#ffffff"></polyline>
                         </svg>
                       </div>
-                      <p class="text-white">Play anywhere - even offline</p>
+                      <p className="text-white">Play anywhere - even offline</p>
                     </li>
-                    <li class="flex items-center space-x-2">
-                      <div class="w-6 h-6">
+                    <li className="flex items-center space-x-2">
+                      <div className="w-6 h-6">
                         <svg
                           role="img"
                           focusable="false"
@@ -305,12 +305,12 @@ export default function Pricing({
                           width="24"
                           viewBox="0 0 24 24"
                           aria-label=""
-                          class="text-white stroke-current"
+                          className="text-white stroke-current"
                         >
                           <polyline points="3.32 12.86 8.9 19.4 20.99 5.26" fill="none" stroke="#ffffff"></polyline>
                         </svg>
                       </div>
-                      <p class="text-white">On-demand playback</p>
+                      <p className="text-white">On-demand playback</p>
                     </li>
                   </ul>
                   <Button
