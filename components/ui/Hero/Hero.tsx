@@ -91,7 +91,7 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
 
       <section id="offer">
       <Container className="mx-auto max-w-[1920px] flex bg-gray-200 text-black flex-col items-center py-4 sm:py-24 sm:px-6">
-          <div className="text-black text-5xl text-center  font-extrabold sm:text-5xl whitespace-nowrap">
+          <div className="text-black text-4xl text-center  font-extrabold sm:text-4xl whitespace-nowrap">
             Pick your premium
           </div>
 
