@@ -64,7 +64,7 @@ export default async function About() {
 
   return (
     <>
-    <SectionTitle  title="How can we help you?" className="text-4xl">
+    <SectionTitle  title="How can we help you?" >
         Answer your customers possible questions here, it will increase the
         conversion rate as well as support or chat requests.
       </SectionTitle>
