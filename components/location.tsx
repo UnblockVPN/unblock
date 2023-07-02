@@ -1,10 +1,23 @@
-import { useState } from 'react';
+import { useEffect, useState } from "react"
 
-export default function LocationComponent({ ipAddress, country, latitude, longitude }) {
-  console.log('ipAddress:', ipAddress);
-  console.log('country:', country);
-  console.log('latitude:', latitude);
-  console.log('longitude:', longitude);
+export const LocationComponent = () => {
+
+  const [ipAddress, setIPAddress] = useState<string>('')
+  const [country, setCountry] = useState('')
+  const [latitude, setLatitude] = useState('')
+  const [longitude, setLongitude] = useState('')
+
+  useEffect(() => {
+    fetch('https://geolocation-db.com/json/')
+      .then(response => response.json())
+      .then(data => {
+        setIPAddress(data.IPv4)
+        setCountry(data.country_name)
+        setLatitude(data.latitude)
+        setLongitude(data.longitude)
+      })
+      .catch(error => console.log(error))
+  }, [])
 
   return (
     <div>
@@ -13,38 +26,5 @@ export default function LocationComponent({ ipAddress, country, latitude, longit
       <p>Your latitude is: {latitude}</p>
       <p>Your longitude is: {longitude}</p>
     </div>
-  );
-}
-
-export async function getServerSideProps() {
-  try {
-    const res = await fetch('https://geolocation-db.com/json/');
-    const data = await res.json();
-
-    const ipAddress = data.IPv4;
-    const country = data.country_name;
-    const latitude = data.latitude;
-    const longitude = data.longitude;
-
-    console.log('Fetched data:', data);
-
-    return {
-      props: {
-        ipAddress,
-        country,
-        latitude,
-        longitude,
-      },
-    };
-  } catch (error) {
-    console.error('Error:', error);
-    return {
-      props: {
-        ipAddress: '',
-        country: '',
-        latitude: '',
-        longitude: '',
-      },
-    };
-  }
+  )
 }
