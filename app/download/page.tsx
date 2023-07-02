@@ -1,5 +1,5 @@
 import ManageSubscriptionButton from './ManageSubscriptionButton';
-import Download from '@/components/ui/Download';
+//import Download from '@/components/ui/Download';
 import {
   getSession,
   getUserDetails,
