@@ -1,11 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
-export default function LocationComponent({ ipAddress, country, latitude, longitude }) {
-  console.log('ipAddress:', ipAddress);
-  console.log('country:', country);
-  console.log('latitude:', latitude);
-  console.log('longitude:', longitude);
-
+export const LocationComponent = ({ ipAddress, country, latitude, longitude }) => {
   return (
     <div>
       <p>Your IP Address is: {ipAddress}</p>
@@ -14,7 +9,7 @@ export default function LocationComponent({ ipAddress, country, latitude, longit
       <p>Your longitude is: {longitude}</p>
     </div>
   );
-}
+};
 
 export async function getServerSideProps() {
   try {
@@ -25,8 +20,6 @@ export async function getServerSideProps() {
     const country = data.country_name;
     const latitude = data.latitude;
     const longitude = data.longitude;
-
-    console.log('Fetched data:', data);
 
     return {
       props: {

@@ -40,7 +40,7 @@ const Download: React.FC<Props> = ({ session, user, subscription, products }) =>
     </div>
   </div>
 </Container>
-<LocationComponent></LocationComponent>
+{/* <LocationComponent></LocationComponent> */}
       </div>
 
      <Container className="mx-auto max-w-[1920px] flex bg-white text-black flex-col items-center  sm:py-12 sm:px-6">
