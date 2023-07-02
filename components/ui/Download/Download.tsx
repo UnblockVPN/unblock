@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import Container from '@/components/ui/Download/Container';
 import s from '../Navbar/Navbar.module.css';
-import LocationComponent from '@/components/location';
+//import LocationComponent from '@/components/location';
 
 interface Props {
   session: Session | null;
