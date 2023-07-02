@@ -1,7 +1,11 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
+    if (req.method !== 'GET') {
+      throw new Error('Method Not Allowed');
+    }
+
     const ipAddress = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
     console.log('Client IP Address:', ipAddress);
 
@@ -15,28 +19,3 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     res.status(500).json({ error: 'Internal Server Error' });
   }
 }
-
-
-
-
-
-
-
-
-// pages/api/hello.js
-/* export default function handler(req, res) {
-    let ip;
-  
-    if (req.headers["x-forwarded-for"]) {
-      ip = req.headers["x-forwarded-for"].split(',')[0]
-    } else if (req.headers["x-real-ip"]) {
-      ip = req.connection.remoteAddress
-    } else {
-      ip = req.connection.remoteAddress
-    }
-  
-    console.log(ip);
-  
-    console.log(ip)
-    res.status(200).json({ name: 'John Doe' })
-  } */
