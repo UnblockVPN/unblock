@@ -3,7 +3,6 @@ import Pricing from '@/components/Pricing';
 import Link from 'next/link';
 import Image from "next/image";
 import Container from '@/components/ui/Hero/Container';
-import heroImg from "../../../public/couple_02.png";
 import s from '../Navbar/Navbar.module.css';
 
 
@@ -16,7 +15,7 @@ interface Props {
 }
 
 
-const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
+const Premium: React.FC<Props> = ({ session, user, subscription, products }) => {
   return (
     <>
       <section id="offer">
@@ -38,4 +37,4 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
   );
 }
 
-export default Hero;
+export default Premium;

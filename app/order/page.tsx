@@ -1,5 +1,5 @@
-import ManageSubscriptionButton from './ManageSubscriptionButton';
-import Hero from '@/components/ui/Premium';
+//import ManageSubscriptionButton from './ManageSubscriptionButton';
+import Premium from '@/components/ui/Premium';
 import {
   getSession,
   getUserDetails,
@@ -64,6 +64,6 @@ export default async function About() {
   };
 
   return (
-    <Hero session={session} user={user} subscription={subscription} products={products}/>
+    <Premium session={session} user={user} subscription={subscription} products={products}/>
     );
 }
