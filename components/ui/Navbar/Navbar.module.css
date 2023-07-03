@@ -75,7 +75,30 @@
   @apply mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row;
 }
 
+/* New classes for Support component */
+.supportContainer {
+  @apply mx-auto max-w-[1920px] bg-yellow-400 h-1/2 py-4 sm:py-12 sm:px-12;
+}
 
+.supportLink {
+  @apply inline-flex text-white dark:text-white items-center leading-6 font-medium transition ease-in-out duration-75 cursor-pointer rounded-md p-1 ;
+}
+
+.supportTitle {
+  @apply text-left text-4xl mb-10 font-extrabold sm:text-4xl whitespace-nowrap;
+}
+
+.supportSubtitle {
+  @apply text-left mb-10 leading-normal text-xl sm:text-2xl;
+}
+
+.supportButton {
+  @apply px-8 py-2 font-medium text-center dark:bg-white bg-black rounded-full sm:text-white dark:text-black;
+}
+
+.supportDisclaimer {
+  @apply mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row;
+}
 
 /* ...existing styles... */
 

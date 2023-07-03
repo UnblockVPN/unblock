@@ -1,3 +1,4 @@
+import Support from '@/components/ui/Support';
 import {
   getSession,
   getUserDetails,
@@ -11,15 +12,14 @@ import { cookies } from 'next/headers';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
-import SectionTitle from '@/components/sectionTitle';
-import Container from '@/components/ui/Hero/Container';
-import Faq from '@/components/faq';
+import { getActiveProductsWithPrices } from '@/app/supabase-server';
 
 export default async function About() {
-  const [session, userDetails, subscription] = await Promise.all([
+  const [session, userDetails, subscription, products] = await Promise.all([
     getSession(),
     getUserDetails(),
-    getSubscription()
+    getSubscription(),
+    getActiveProductsWithPrices()
   ]);
 
   const user = session?.user;
@@ -63,25 +63,6 @@ export default async function About() {
   };
 
   return (
-    <>
-    <SectionTitle  title="How can we help you?" >
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
-      
-      <Faq />
-      
-
-      
-
-      </>
-
-  );
-}
-
-interface Props {
-  title: string;
-  description?: string;
-  footer?: ReactNode;
-  children: ReactNode;
+    <Support session={session} user={user} subscription={subscription} products={products}/>
+    );
 }

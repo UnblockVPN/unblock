@@ -1,5 +1,5 @@
 import React from "react";
-import Container from '@/components/ui/Hero/Container';
+import Container from '@/components/ui/Support/Container';
 
 interface SectionTitleProps {
   align?: "left";
@@ -11,7 +11,7 @@ interface SectionTitleProps {
 const SectionTitle: React.FC<SectionTitleProps> = (props) => {
   return (
     <Container
-      className={`flex w-full flex-col mt-4 ${
+      className={`flex w-full flex-col mt-4 w-full h-full bg-gradient-to-br from-blue-500 to-purple-500${
         props.align === "left" ? "" : "items-center justify-center text-center"
       }`}
     >
