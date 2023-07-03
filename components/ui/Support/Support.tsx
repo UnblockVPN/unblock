@@ -23,15 +23,13 @@ const Support: React.FC<Props> = ({ session, user, subscription, products }) => 
   <div className="flex flex-col mt-12 max-w-6xl justify-center items-center px-4 text-center w-full">
     <div className="max-w-2xl">
     
-      <p className="  leading-normal text-black font-bold text-l sm:text-l">
-      UnblockVPN support
-      </p>
-      <h1 className=" text-5xl mt-6 mb-10 text-black font-extrabold sm:text-5xl whitespace-nowrap">
+
+      <h1 className=" text-5xl mt-12 mb-12 text-black font-extrabold sm:text-5xl whitespace-nowrap">
       How can we help you?
       </h1>
       <div></div>
       
-      <p className="  leading-normal font-bold text-l sm:text-l className={`${s.supportLink} py-4 `}">
+      <p className="  leading-normal text-black mb-6 font-bold text-xl sm:text-l className={`${s.supportLink} py-4 `}">
       <Link href="/signin" >Login for faster help</Link>
       </p>
       
