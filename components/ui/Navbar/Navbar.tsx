@@ -16,11 +16,11 @@ export default async function Navbar() {
       <a href="#skip" className="sr-only focus:not-sr-only">
         Skip to content
       </a>
-      <div className="mx-auto max-w-[1920px]  sm:px-24 flex flex-col px-4 text-left w-full bg-white dark:bg-black">
-        <div className=" flex  justify-between ">
-          <div >
-            <a href="/" className={s.logo} aria-label="Logo">
-              <Logo />
+      <div className="mx-auto max-w-[1920px] sm:px-24 flex flex-col text-left w-full bg-white dark:bg-black">
+        <div className=" flex  justify-between flex items-center">
+          <div className="flex items-center justify-start">
+            <a href="/" className={`${s.logo} text-2xl`} aria-label="Logo">
+              <Logo className="w-12 h-12"/>
             </a>
             
           </div>
@@ -40,11 +40,14 @@ export default async function Navbar() {
             {user ? (
               <SignOutButton />
             ) : (
-              <Link href="/signin" className={s.link}>
+              <Link  href="/signin" className={`${s.link} whitespace-nowrap`}>
                 Log in
               </Link>
             )}
-            <ThemeChanger />
+            {/* Conditionally render ThemeChanger based on screen size */}
+            <div className="hidden sm:block">
+              <ThemeChanger />
+            </div>
           </div>
         </div>
       </div>

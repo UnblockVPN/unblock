@@ -169,7 +169,7 @@ export default function Pricing({
     <section className="">
       <div className="max-w-6xl px-4 py-2 mx-auto sm:py-2 sm:px-6 lg:px-8">
         <div className="sm:flex sm:flex-col sm:align-center">
-          <p className="max-w-2xl m-auto mt-5 text-xl text-black sm:text-center sm:text-xl">
+          <p className="max-w-2xl m-auto mt-5 text-center text-xl text-black sm:text-center sm:text-xl">
             Add a plan to go live, cancel any time via stripe. Join the VPN service powered by&nbsp;
             
             <a
@@ -216,7 +216,7 @@ export default function Pricing({
 
         {/* ACTIVE OFFER */}
        
-        <div className="relative flex flex-wrap mt-12 mx-auto w-3/4 max-w-2xl gap-8 justify-center items-center sm:justify-start sm:grid sm:grid-cols-1">
+        <div className="relative flex flex-wrap mt-12 mx-auto w-12/12 sm:w-8/12 max-w-2xl gap-8 justify-center items-center sm:justify-start sm:grid sm:grid-cols-1">
           {products.map((product) => {
             const price = product?.prices?.find(
               (price) => price.interval === billingInterval

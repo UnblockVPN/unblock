@@ -1,12 +1,8 @@
-import { Session, User } from '@supabase/supabase-js';
-import Pricing from '@/components/Pricing';
-import Link from 'next/link';
-import Image from "next/image";
-import Container from '@/components/ui/Hero/Container';
-import heroImg from "../../../public/couple_02.png";
-import s from '../Navbar/Navbar.module.css';
-
-
+import React from "react";
+import Link from "next/link";
+import Pricing from "@/components/Pricing";
+import Container from "@/components/ui/Hero/Container";
+import s from "../Navbar/Navbar.module.css";
 
 interface Props {
   session: Session | null;
@@ -15,97 +11,111 @@ interface Props {
   products: any[]; // Add the appropriate type for the 'products' prop
 }
 
-
 const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
   return (
     <>
-          <div className={`${s.heroContainer} mx-auto max-w-[1920px]  py-4 `}>
-
-      <Container className="mx-auto max-w-[1920px]  py-4 ">
-        <div className="flex flex-col mt-2 max-w-6xl items-center px-4 text-left w-full">
-          <div className="max-w-2xl">
-            <h2 className="text-left text-2xl mb-4  font-extrabold sm:text-2xl">
-              Protect your digital life 24/7
-            </h2>
-            <h1 className="text-left text-4xl mb-10 font-extrabold sm:text-4xl whitespace-nowrap">
-              Get Premium VPN free for 1 month
-            </h1>
-            <p className="text-left mb-10 leading-normal text-xl sm:text-2xl">
-              Only $9.99/month after. Cancel anytime.
-            </p>
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <Link href="/order" className="px-6 py-3 border border-black border-2 font-medium text-center bg-black rounded-full sm:text-white transition duration-500 ease-in-out transform hover:scale-110">
+      <div
+        className={`${s.heroContainer} mx-auto max-w-screen-sm py-4 sm:py-12 sm:px-8`}
+      >
+        <Container className="mx-auto max-w-[1920px]">
+          <div className="flex flex-col mt-2 items-center">
+            <div className="max-w-2xl">
+            <div className="max-w-2xl">
+              <h2 className="text-2xl text-center mb-4 font-extrabold sm:text-lg sm:text-left sm:leading-relaxed">
+                Protect your digital life 24/7
+              </h2>
+              <h1 className="text-3xl text-center mb-10 font-extrabold sm:text-4xl sm:leading-relaxed sm:text-left whitespace-normal text-left">
+                Get Premium VPN free for 1 month
+              </h1>
+              <p className="mb-10 text-center leading-normal text-xl sm:text-lg sm:text-left sm:leading-relaxed">
+                Only $9.99/month after. Cancel anytime.
+              </p>
+              <div className="flex flex-col items-center space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+              <Link
+                href="/order"
+                className="px-6 py-3 border border-black border-2 font-medium text-center bg-black rounded-full sm:text-white transition duration-500 ease-in-out transform hover:scale-110"
+              >
                 GET STARTED
               </Link>
-              <Link href="#offer" scroll={false} className="bg-blue-600 border border-white border-2 px-6 py-3 font-medium text-center rounded-full text-white transition duration-500 ease-in-out transform hover:scale-110">
+              <Link
+                href="#offer"
+                scroll={false}
+                className="bg-blue-600 border border-white border-2 px-6 py-3 font-medium text-center rounded-full text-white transition duration-500 ease-in-out transform hover:scale-110"
+              >
                 VIEW PLANS
               </Link>
             </div>
-            <div className="flex flex-col mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              Terms and conditions apply. 1 month free not available for users who have already tried Premium.
+              <div className="flex flex-col text-center mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:text-left sm:items-center sm:flex-row">
+                Terms and conditions apply. 1 month free not available for users who have already tried Premium.
+              </div>
+              </div>
             </div>
           </div>
-        </div>
-      </Container>
+        </Container>
       </div>
 
-     <Container className="mx-auto max-w-[1920px] flex bg-white text-black flex-col items-center  sm:py-12 sm:px-6">
-        <div className="text-4xl text-center mb-10 font-extrabold sm:text-4xl whitespace-nowrap">
-          Why go premium?
+      <Container className="mx-auto max-w-[1920px] bg-white dark:bg-white text-black flex flex-col items-center py-4 sm:py-12 sm:px-8">
+  <div className="text-4xl mb-10 font-extrabold sm:text-4xl sm:leading-relaxed">
+    Why go premium?
+  </div>
+  <ul className="flex flex-col space-y-4">
+    <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+      <div className="flex flex-col items-center">
+        <div className="h-36 w-36">
+          <img src="/music.png" alt="My Image" />
         </div>
-        <ul className="flex flex-col space-y-4 ">
-          <div className="flex flex-row space-x-4 ">
-            <div className="flex flex-col items-center ">
-              <div className="h-36 w-36"><img src="/music.png" alt="My Image" /></div>
-              <div className="ml-4">
-                <p className="font-bold text-center text-black">Safer on public Wi-Fi</p>
-                <p className="text-black text-center text-black ">Increase protection.</p>
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-            <div className="h-36 w-36"><img src="/movies.png" alt="My Image" /></div>
-              <div className="ml-4">
-                <p className="font-bold text-center text-black">Stream music, movies and TV.</p>
-                <p className="text-black text-center text-black">Enjoy the entire catalog.</p>
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-            <div className="h-36 w-36"><img src="/privacy.png" alt="My Image" /></div>
-              <div className="ml-4">
-                <p className="font-bold text-center text-black">Keep your internet privacy.</p>
-                <p className="text-black text-center text-black">Even on mobile.</p>
-              </div>
-            </div>
-            <div className="flex flex-col items-center">
-            <div className="h-36 w-36"><img src="/bank.png" alt="My Image" /></div>
-              <div className="ml-4">
-                <p className="font-bold text-center text-black">Shop without limits.</p>
-                <p className="text-black text-center text-black">Location bias shopping.</p>
-              </div>
-            </div>
-          </div>
-          
-        </ul>
-      </Container>
-      
+        <div className="ml-4 text-center"> {/* Updated: Added text-center class */}
+          <p className="font-bold text-black">Safer on public Wi-Fi</p>
+          <p className="text-black">Increase protection.</p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center">
+        <div className="h-36 w-36">
+          <img src="/movies.png" alt="My Image" />
+        </div>
+        <div className="ml-4 text-center"> {/* Updated: Added text-center class */}
+          <p className="font-bold text-black">Stream music, movies and TV.</p>
+          <p className="text-black">Enjoy the entire catalog.</p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center">
+        <div className="h-36 w-36">
+          <img src="/privacy.png" alt="My Image" />
+        </div>
+        <div className="ml-4 text-center"> {/* Updated: Added text-center class */}
+          <p className="font-bold text-black">Keep your internet privacy.</p>
+          <p className="text-black">Even on mobile.</p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center">
+        <div className="h-36 w-36">
+          <img src="/bank.png" alt="My Image" />
+        </div>
+        <div className="ml-4 text-center"> {/* Updated: Added text-center class */}
+          <p className="font-bold text-black">Shop without limits.</p>
+          <p className="text-black">Location bias shopping.</p>
+        </div>
+      </div>
+    </div>
+  </ul>
+</Container>
+
+
 
       <section id="offer">
-      <Container className="mx-auto max-w-[1920px] flex bg-gray-200 text-black flex-col items-center py-4 sm:py-24 sm:px-6">
-          <div className="text-black text-4xl text-center  font-extrabold sm:text-4xl whitespace-nowrap">
-            Pick your premium
-          </div>
+  <Container className="mx-auto max-w-[1920px] bg-gray-200 text-black flex flex-col items-center py-4 sm:py-24 sm:px-8">
+    <div className=" text-4xl text-center font-extrabold sm:text-4xl sm:leading-relaxed whitespace-nowrap">
+      Pick your premium
+    </div>
 
-
-
-          <div className="">
-            <Pricing session={session} user={user} subscription={subscription} products={products} />
-          </div>
-</Container>
+    <div className="">
+      <Pricing session={session} user={user} subscription={subscription} products={products} />
+    </div>
+  </Container>
 </section>
-
 
     </>
   );
-}
+};
 
 export default Hero;
