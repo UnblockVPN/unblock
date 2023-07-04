@@ -20,7 +20,7 @@ export default async function Navbar() {
         <div className=" flex  justify-between flex items-center">
           <div className="flex items-center justify-start">
             <a href="/" className={`${s.logo} text-2xl`} aria-label="Logo">
-              <Logo className="w-12 h-12"/>
+              <Logo />
             </a>
             
           </div>
