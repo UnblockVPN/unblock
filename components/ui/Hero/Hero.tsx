@@ -1,3 +1,4 @@
+import { Session, User } from '@supabase/supabase-js';
 import React from "react";
 import Link from "next/link";
 import Pricing from "@/components/Pricing";
