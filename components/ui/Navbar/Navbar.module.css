@@ -83,8 +83,9 @@
 
 /* New classes for Hero component */
 .downloadContainer {
-  @apply mx-auto max-w-screen-sm sm:max-w-[1920px] bg-green-400 py-4 sm:py-12 sm:px-8;
+  @apply mx-auto sm:text-center max-w-screen-sm sm:max-w-[1920px] bg-green-400 py-4 sm:py-12 sm:px-8;
 }
+
 
 .downloadTitle {
   @apply text-left text-4xl mb-10 font-extrabold sm:text-lg sm:leading-relaxed;
@@ -104,8 +105,10 @@
 
 /* New classes for Support component */
 .supportContainer {
-  @apply mx-auto max-w-screen-sm sm:max-w-[1920px] bg-yellow-400 h-1/2 py-4 sm:py-12 sm:px-8;
+  @apply mx-auto sm:text-center max-w-screen-sm sm:max-w-[1920px]  bg-yellow-400 py-4 sm:py-12 sm:px-8;
 }
+
+
 
 .supportLink {
   @apply inline-flex text-white dark:text-white items-center leading-6 font-medium transition ease-in-out duration-75 cursor-pointer rounded-md p-1 ;

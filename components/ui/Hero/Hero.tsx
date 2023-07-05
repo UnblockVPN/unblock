@@ -18,8 +18,8 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
       <div
         className={`${s.heroContainer} mx-auto max-w-screen-sm py-4 sm:py-12 sm:px-8`}
       >
-        <Container className="mx-auto max-w-[1920px]">
-          <div className="flex flex-col mt-2 items-center">
+        <Container className="mx-auto max-w-[1920px] flex items-center justify-center py-4">
+          <div className="flex flex-col mt-12 max-w-6xl justify-center items-center px-4 text-center w-full">
             <div className="max-w-2xl">
             <div className="max-w-2xl">
               <h2 className="text-2xl text-center mb-4 font-extrabold sm:text-lg sm:text-left sm:leading-relaxed">

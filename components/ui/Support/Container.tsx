@@ -8,7 +8,7 @@ interface ContainerProps {
 const Container: React.FC<ContainerProps> = (props: ContainerProps) => {
   return (
     <div
-      className={`container p-8 mx-auto xl:px-0${
+      className={`container p-4 mx-auto xl:px-0 sm:p-2 ${
         props.className ? props.className : ""
       }`}
     >
