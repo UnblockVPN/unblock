@@ -26,15 +26,15 @@ export default async function Navbar() {
           </div>
           <div className="flex items-center space-x-8">
             <nav className={`ml-auto ${s.link}`}>
-              <Link href="/order" className={s.link}>
-                Premium
-              </Link>
-              <Link href="/support" className={s.link}>
-                Support
-              </Link>
-              <Link href="/download" className={s.link}>
-                Download
-              </Link>
+            <Link href="/order" className={s.link} style={{ marginRight: '24px' }}>
+              Premium
+            </Link>
+            <Link href="/support" className={s.link} style={{ marginRight: '24px' }}>
+              Support
+            </Link>
+            <Link href="/download" className={s.link} style={{ marginRight: '24px' }}>
+              Download
+            </Link>
             </nav>
 
             {user ? (

@@ -1,0 +1,21 @@
+"Typescript default React component": {
+  "scope": "typescriptreact",
+  "prefix": "fc",
+  "body": [
+    "import React, { FC } from 'react';",
+    "",
+    "interface PageProps {",
+    "  // Define your props here",
+    "}",
+    "",
+    "const Page: FC<{ pageProps: PageProps }> = ({ pageProps }) => {",
+    "  return (",
+    "    <div>",
+    "      page",
+    "    </div>",
+    "  );",
+    "};",
+    "",
+    "export default Page;"
+  ]
+}
