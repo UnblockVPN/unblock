@@ -13,8 +13,7 @@
 .link {
   @apply inline-flex text-black dark:text-white items-center leading-6 font-medium transition ease-in-out duration-75 cursor-pointer rounded-md p-1;
 
-  /* Adjust font size and padding for smaller screens */
-  @apply sm:text-sm sm:p-0.5;
+  @apply sm:text-sm sm:p-2;
 }
 
 .link:hover {
