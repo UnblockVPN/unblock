@@ -216,7 +216,7 @@ export default function Pricing({
 
         {/* ACTIVE OFFER */}
        
-        <div className="relative flex flex-wrap mt-12 mx-auto w-12/12 sm:w-8/12 max-w-2xl gap-8 justify-center items-center sm:justify-start sm:grid sm:grid-cols-1">
+        <div className="relative flex flex-col mt-12 mx-auto w-12/12 sm:w-8/12 max-w-2xl gap-8 justify-center items-center sm:justify-start sm:grid sm:grid-cols-1">
           {products.map((product) => {
             const price = product?.prices?.find(
               (price) => price.interval === billingInterval
