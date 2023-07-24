@@ -196,6 +196,22 @@ export default function Footer() {
                 Hong Kong VPN
               </Link>
             </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="/countries/"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                South America VPN
+              </Link>
+            </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="/countries/africa"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                Africa VPN
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -213,7 +229,7 @@ export default function Footer() {
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
-                href="/legal/privacy-policy"
+                href="/about/privacy"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Privacy Policy
@@ -221,7 +237,7 @@ export default function Footer() {
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
-                href="/legal/terms-of-service"
+                href="/about/tos"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Terms of Service
@@ -229,10 +245,10 @@ export default function Footer() {
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
-                href="/legal/cookie-policy"
+                href="/about/trust"
                 className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
               >
-                Cookie policy
+                Trust Centre
               </Link>
             </li>
             <li className="py-3 md:py-0 md:pb-4">

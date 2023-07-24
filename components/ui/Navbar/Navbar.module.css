@@ -25,11 +25,6 @@
   @apply outline-none text-zinc-500 ring-2  ring-opacity-50;
 }
 
-/* Increase space between navigation items */
-.nav-item {
-  padding-right: 0px;
-}
-
 .logo {
   @apply sm:px-24  cursor-pointer ring-opacity-0 focus:ring-opacity-0 focus:outline-none ring-0 rounded-none transform duration-100 ease-in-out;
 }
@@ -66,37 +61,6 @@
 }
 
 
-
-/* New classes for Legal component */
-.legalContainer {
-  @apply mx-auto text-left sm:text-center max-w-screen-sm sm:max-w-[1920px] py-4 sm:py-12 sm:px-8;
-}
-
-.leftNav {
-  display: flex;        /* Display the items in a row */
-  align-items: flex-start; /* Align items to the start (top) of the flex container */
-  flex-wrap: wrap;      /* Allow items to wrap if needed (optional, for responsiveness) */
-  flex-direction: column; /* Arrange the items vertically */
-}
-.leftNav a {
-  margin-right: 1rem; /* Adjust the margin as per your preference */
-}
-
-.legalTitle {
-  @apply text-left text-4xl mb-10 font-extrabold sm:text-lg sm:leading-relaxed;
-}
-
-.legalSubtitle {
-  @apply text-left mb-10 leading-normal text-xl sm:text-lg sm:leading-relaxed;
-}
-
-.legalButton {
-  @apply px-8 py-2 font-medium text-center dark:bg-white bg-black rounded-full sm:text-white dark:text-black;
-}
-
-.legalDisclaimer {
-  @apply mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row;
-}
 
 
 .pricingContainer {
@@ -175,7 +139,7 @@
   transition: background-color 0.3s ease;
   padding-bottom: 0;
   z-index: 40;
-  height: auto;
+  height: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -208,42 +172,5 @@
     color: black;
     font-size: 2rem;
     font-weight: 800;
-  }
-}
-
-
-/* Existing styles... */
-
-.legal-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.legal-links {
-  display: flex;
-  justify-content: space-between;
-}
-
-@media (max-width: 768px) {
-  .legal-links {
-    display: none;
-  }
-
-  .legal-policy-text {
-    margin-top: 1rem;
-  }
-
-  /* Styles for the drop-down menu */
-  .legal-dropdown {
-    display: block;
-    margin-bottom: 1rem;
-  }
-
-  .legal-dropdown select {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
   }
 }
