@@ -5,7 +5,9 @@ const LegalPage = () => {
   const router = useRouter();
 
   // This will load app/legal/terms-of-service/page.tsx on open.
-  router.push("/legal/terms-of-service");
+  router.push("/legal/terms-of-service", {
+    replace: true,
+  });
 
   return (
     <>
