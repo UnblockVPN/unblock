@@ -1,9 +1,9 @@
 .root {
-  @apply sticky top-0 pb-0 bg-white dark:bg-black z-40 h-16 md:h-24;
+  @apply sticky top-0 pb-0 bg-white dark:bg-black z-40 ;
   transition: background-color 0s ease;
+  margin-bottom: 0.5rem;
+  height: 5rem;
 
-  /* Responsive padding and margin */
-  @apply sm:pb-2 sm:pt-2 sm:mb-2 sm:mt-2 sm:h-12;
 }
 
 .dark .root {
@@ -31,6 +31,8 @@
 @media (max-width: 1024px) {
   .root {
     @apply justify-between;
+    margin-bottom: 1.5rem;
+    height: 5rem;
   }
 
   .logo {
@@ -59,9 +61,6 @@
   @apply mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row;
 }
 
-
-
-
 .pricingContainer {
   @apply mx-auto max-w-screen-sm sm:max-w-[1920px] bg-gray-200 text-black flex flex-col items-center py-4 sm:py-24 sm:px-8;
 
@@ -78,7 +77,6 @@
     width: 100%;
   }
 }
-
 
 /* New classes for Hero component */
 .downloadContainer {
@@ -106,8 +104,6 @@
 .supportContainer {
   @apply mx-auto sm:text-center max-w-screen-sm sm:max-w-[1920px]  bg-yellow-400 py-4 sm:py-12 sm:px-8;
 }
-
-
 
 .supportLink {
   @apply inline-flex text-white dark:text-white items-center leading-6 font-medium transition ease-in-out duration-75 cursor-pointer rounded-md p-1 ;
@@ -138,10 +134,11 @@
   transition: background-color 0.3s ease;
   padding-bottom: 0;
   z-index: 40;
-  height: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 1.5rem;
+  height: 5rem;
 }
 
 .navbarLogo {
@@ -158,9 +155,15 @@
 
 @media (min-width: 768px) {
   .navbarRoot {
-    height: 24px;
+    margin-bottom: 1.5rem;
+    height: 5rem;
   }
-
+}
+  @media (min-width: 640px) {
+    .navbarRoot {
+      margin-bottom: 1.5rem;
+      height: 5rem;
+    }
   .navbarLogo {
     margin-left: 0;
   }

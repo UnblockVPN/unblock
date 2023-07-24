@@ -1,8 +1,8 @@
 /* legal.module.css */
 
 .legalContainer {
-    @apply flex items-start w-full bg-gray-200 dark:bg-black mt-12 text-black dark:text-white;
-    margin-top: 6rem;
+    @apply flex items-start w-full bg-gray-200 dark:bg-black  text-black dark:text-white;
+   
   }
   
   .legalLinks a {
@@ -25,7 +25,7 @@
   }
   
   .legalPolicyContent {
-    @apply flex ml-12 mb-12 flex-col flex-1; /* Use flex-1 to make the RHS flexible and occupy remaining space */
+    @apply flex ml-12  flex-col flex-1; /* Use flex-1 to make the RHS flexible and occupy remaining space */
     margin-right: 3rem;
     margin-top: 3rem;
     line-height: 2rem;
