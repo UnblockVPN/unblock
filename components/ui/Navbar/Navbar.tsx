@@ -38,12 +38,17 @@ export default async function Navbar() {
             </nav>
 
             {user ? (
-              <SignOutButton />
-            ) : (
-              <Link  href="/signin" className={`${s.link} whitespace-nowrap`}>
-                Log in
-              </Link>
-            )}
+          <>
+            <SignOutButton />
+            <Link href="/account" className={`${s.link} whitespace-nowrap`}>
+              Account
+            </Link>
+          </>
+        ) : (
+          <Link href="/signin" className={`${s.link} whitespace-nowrap`}>
+            Log in
+          </Link>
+        )}
             {/* Conditionally render ThemeChanger based on screen size */}
             <div className="hidden sm:block">
               <ThemeChanger />
