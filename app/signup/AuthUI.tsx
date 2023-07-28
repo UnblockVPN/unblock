@@ -12,6 +12,7 @@ export default function AuthUI() {
       <Auth
         supabaseClient={supabase}
         providers={['apple', 'google','azure','github']}
+        
         redirectTo={getURL()}
         magicLink={true}
         appearance={{

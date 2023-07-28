@@ -16,7 +16,7 @@ export default async function Navbar() {
       <a href="#skip" className="sr-only focus:not-sr-only">
         Skip to content
       </a>
-      <div className="mx-auto max-w-[1920px] mb-2 sm:px-24 flex flex-col text-left w-full dark:bg-black">
+      <div className="mx-auto max-w-[1920px] mb-2 sm:px-24 flex flex-col text-left w-full">
         <div className=" flex mb-2 mt-2 justify-between flex items-center">
           <div className="flex items-center justify-start">
             <a href="/" className={`${s.logo} text-2xl`} aria-label="Logo">

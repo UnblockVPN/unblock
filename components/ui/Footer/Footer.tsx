@@ -1,20 +1,21 @@
 import Link from 'next/link';
+import s from '@/components/ui/Navbar/Navbar.module.css';
 
 import Logo from '@/components/icons/Logo';
 import GitHub from '@/components/icons/GitHub';
 
 export default function Footer() {
   return (
-    <footer className="mx-auto max-w-[1920px] px-6 bg-zinc-900">
-      <div className="grid grid-cols-1 gap-8 py-12 text-white transition-colors duration-150 border-b lg:grid-cols-12 border-zinc-600 bg-zinc-900 justify-center lg:justify-start">
+    <footer className={`${s.footer} `}>
+      <div className="grid grid-cols-1 gap-8 py-12  transition-colors duration-150 border-b lg:grid-cols-12 border-zinc-600 justify-center lg:justify-start">
 
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
             <li className="py-3 md:py-0 md:pb-4">
-            <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+            <p className="font-bold  transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
                 href="/download"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Download
               </Link>
@@ -25,7 +26,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/download/mac"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Mac VPN
               </Link>
@@ -33,7 +34,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/download/windows"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Windows PC VPN
               </Link>
@@ -41,7 +42,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/download/iphone"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Iphone VPN
               </Link>
@@ -49,7 +50,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/download/android"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Android VPN
               </Link>
@@ -57,7 +58,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/download/linux"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Linux VPN
               </Link>
@@ -65,7 +66,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/download/router"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Router VPN
               </Link>
@@ -74,10 +75,10 @@ export default function Footer() {
 
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-4">
-            <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+            <p className="font-bold  transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
                 href="/features"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Features
               </Link>
@@ -86,7 +87,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/features/trial"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Risk-Free VPN trial
               </Link>
@@ -94,7 +95,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/features/streaming"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Streaming Optimizer
               </Link>
@@ -102,7 +103,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/features/accelerator"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Download Accelerator
               </Link>
@@ -113,10 +114,10 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-4">
-            <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+            <p className="font-bold  transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
                 href="/countries"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 195 Countries
               </Link>
@@ -125,7 +126,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/countries/usa"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 US VPN
               </Link>
@@ -133,7 +134,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/countries/canada"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Canada VPN
               </Link>
@@ -141,7 +142,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/countries/uk"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 UK VPN
               </Link>
@@ -149,7 +150,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/countries/eu"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Europe VPN
               </Link>
@@ -157,7 +158,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/countries/australia"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Australia VPN
               </Link>
@@ -165,7 +166,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/countries/"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 New Zealand VPN
               </Link>
@@ -173,7 +174,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/countries/"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Singapore VPN
               </Link>
@@ -181,7 +182,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/countries/"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Hong Kong VPN
               </Link>
@@ -189,7 +190,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/countries/"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 South America VPN
               </Link>
@@ -197,7 +198,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/countries/africa"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Africa VPN
               </Link>
@@ -208,10 +209,10 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-4">
-            <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+            <p className="font-bold  transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
                 href="/about"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 About UnblockVPN
               </Link>
@@ -220,7 +221,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/legal/privacy-policy#top"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Privacy Policy
               </Link>
@@ -228,7 +229,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/legal/terms-of-service#top"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Terms of Service
               </Link>
@@ -236,7 +237,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/legal/cookie-policy#top"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Cookie Policy
               </Link>
@@ -244,7 +245,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/legal/terms-of-service#top"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Trust Centre
               </Link>
@@ -252,7 +253,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/about/audits"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Security Audits
               </Link>
@@ -260,7 +261,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/about/review"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 UnblockVPN Reviews
               </Link>
@@ -268,7 +269,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/about/press"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Press
               </Link>
@@ -276,7 +277,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/about/careers"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Come work for us!
               </Link>
@@ -284,10 +285,10 @@ export default function Footer() {
           </ul>
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-4">
-            <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+            <p className="font-bold  transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
                 href="/channels"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Channels
               </Link>
@@ -296,7 +297,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/channels/affiliates"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Affiliates
               </Link>
@@ -304,7 +305,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/channels/influencers"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Influencers
               </Link>
@@ -312,7 +313,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/channels/partners"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Partners
               </Link>
@@ -320,7 +321,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/channels/scholarships"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Scholarships
               </Link>
@@ -332,10 +333,10 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-4">
-            <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+            <p className="font-bold  transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
                 href="/support"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Support Centre
               </Link>
@@ -344,7 +345,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/support/qsg"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Quick Start Guide
               </Link>
@@ -352,7 +353,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/support/faq"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 FAQ
               </Link>
@@ -360,7 +361,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/support/contact"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Contact Us
               </Link>
@@ -368,10 +369,10 @@ export default function Footer() {
           </ul>
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-4">
-            <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+            <p className="font-bold  transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
                 href="/learn"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Learn
               </Link>
@@ -380,7 +381,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/learn/whatis"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 What is a VPN
               </Link>
@@ -388,7 +389,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/learn/cases"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Use Cases
               </Link>
@@ -396,7 +397,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/learn/blog"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Blog
               </Link>
@@ -406,10 +407,10 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-4">
-            <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+            <p className="font-bold  transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
                 href="/support"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Support Centre
               </Link>
@@ -418,7 +419,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/support/qsg"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Quick Start Guide
               </Link>
@@ -426,7 +427,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/support/faq"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 FAQ
               </Link>
@@ -434,7 +435,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/support/contact"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Contact Us
               </Link>
@@ -442,10 +443,10 @@ export default function Footer() {
           </ul>
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-4">
-            <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+            <p className="font-bold  transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
                 href="/learn"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Learn
               </Link>
@@ -454,7 +455,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/learn/whatis"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 What is a VPN
               </Link>
@@ -462,7 +463,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/learn/cases"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Use Cases
               </Link>
@@ -470,7 +471,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/learn/blog"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Blog
               </Link>
@@ -482,10 +483,10 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-4">
-            <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+            <p className="font-bold  transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
                 href="/support"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 UnblockVPN Support
               </Link>
@@ -494,7 +495,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/support/qsg"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Quick Start Guide
               </Link>
@@ -502,7 +503,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/support/faq"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 FAQ
               </Link>
@@ -510,7 +511,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/support/contact"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Contact Us
               </Link>
@@ -518,10 +519,10 @@ export default function Footer() {
           </ul>
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-4">
-            <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+            <p className="font-bold  transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
                 href="/learn"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Learn
               </Link>
@@ -530,7 +531,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/learn/whatis"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 What is a VPN
               </Link>
@@ -538,7 +539,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/learn/cases"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Use Cases
               </Link>
@@ -546,7 +547,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/learn/blog"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
                 Blog
               </Link>
@@ -558,19 +559,19 @@ export default function Footer() {
 
 
       </div>
-      <div className="flex flex-col items-center justify-between py-12 space-y-4 md:flex-row bg-zinc-900">
+      <div className="flex flex-col items-center justify-between py-12 space-y-4 md:flex-row ">
         <div>
           <span>
             &copy; {new Date().getFullYear()} UnblockVPN. All rights reserved.
           </span>
         </div>
         <div className="flex items-center">
-          <span className="text-white">Crafted by</span>
+          <span className="">Powered by</span>
           <a href="https://vercel.com" aria-label="Vercel.com Link">
             <img
               src="/vercel.svg"
               alt="Vercel.com Logo"
-              className="inline-block h-6 ml-4 text-white"
+              className="inline-block h-6 ml-4 "
             />
           </a>
         </div>
