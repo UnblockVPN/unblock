@@ -16,14 +16,15 @@ export default async function Navbar() {
       <a href="#skip" className="sr-only focus:not-sr-only">
         Skip to content
       </a>
-      <div className="mx-auto max-w-[1920px] mb-2 sm:px-24 flex flex-col text-left w-full">
-        <div className=" flex mb-2 mt-2 justify-between flex items-center">
-          <div className="flex items-center justify-start">
-            <a href="/" className={`${s.logo} text-2xl`} aria-label="Logo">
+      <div className="mx-auto max-w-[1920px] px-6 flex flex-col text-left w-full">
+        <div className=" flex justify-between flex items-center">
+          <div className="flex items-center justify-center mt-2 justify-start">
+            <a href="/" className={`${s.logo}  `} aria-label="Logo">
               <Logo />
             </a>
-            
+                <p className="text-3xl ml-4 font-extrabold text-zinc-800 dark:text-white sm:text-left text-left">UnblockVPN</p>
           </div>
+
           <div className="flex items-center space-x-8">
             <nav className={`ml-auto ${s.link}`}>
               <Link href="/order" className={s.link}>

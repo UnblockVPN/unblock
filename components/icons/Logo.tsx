@@ -7,7 +7,7 @@ const Logo = () => {
   const logoPath = theme === 'light' ? '/logo-dark.svg' : '/logo-light.svg'; {/* logo-dark.svg: white logo */}
 
   return (
-    <Image src={logoPath} alt="Logo" width={80} height={80}/>
+    <Image src={logoPath} alt="Logo" width={60} height={60}/>
   );
 };
 
