@@ -19,9 +19,9 @@ export default async function Navbar() {
       <div className="mx-auto max-w-[1920px] px-6 flex flex-col text-left w-full">
         <div className=" flex justify-between flex items-center">
           <div className="flex items-center justify-center mt-2 justify-start">
-            <a href="/" className={`${s.logo}  `} aria-label="Logo">
+          <Link href="/" className={`${s.logo}  `} aria-label="Logo">
               <Logo />
-            </a>
+              </Link>
             {/* Add the vertical grey bar */}
             <div className="border-l border-gray-400 h-8 mx-4"></div>
             <Link href="/order" className={s.link}>
