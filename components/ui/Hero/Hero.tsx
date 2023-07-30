@@ -36,18 +36,18 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
                 href="/order"
                 className="px-6 py-3 border border-black border-2 font-medium text-center bg-black rounded-full sm:text-white transition duration-500 ease-in-out transform hover:scale-110"
               >
-                GET STARTED
+                Try Free For 1 Month
               </Link>
               <Link
                 href="#offer"
                 scroll={false}
                 className="bg-blue-600 border border-white border-2 px-6 py-3 font-medium text-center rounded-full text-white transition duration-500 ease-in-out transform hover:scale-110"
               >
-                VIEW PLANS
+                View All Premium Plans
               </Link>
             </div>
               <div className="flex flex-col text-center mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:text-left sm:items-center sm:flex-row">
-                Terms and conditions apply. 1 month free not available for users who have already tried Premium.
+              Offer only available if you haven't tried Premium before. Terms apply.
               </div>
               </div>
             </div>

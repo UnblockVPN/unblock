@@ -22,20 +22,40 @@ export default async function Navbar() {
             <a href="/" className={`${s.logo}  `} aria-label="Logo">
               <Logo />
             </a>
-                <p className="text-3xl ml-4 font-extrabold text-zinc-800 dark:text-white sm:text-left text-left">UnblockVPN</p>
-          </div>
-
-          <div className="flex items-center space-x-8">
-            <nav className={`ml-auto ${s.link}`}>
-              <Link href="/order" className={s.link}>
-                Premium
+            {/* Add the vertical grey bar */}
+            <div className="border-l border-gray-400 h-8 mx-4"></div>
+            <Link href="/order" className={s.link}>
+                Pricing
               </Link>
-              <Link href="/support" className={s.link}>
-                Support
+              <Link href="/features" className={s.link}>
+                Features
+              </Link>
+              <Link href="/servers" className={s.link}>
+                Servers
               </Link>
               <Link href="/download" className={s.link}>
                 Download
               </Link>
+              <Link href="/download" className={s.link}>
+                Business
+              </Link>
+                <p className="text-3xl ml-4 font-extrabold text-zinc-800 dark:text-white sm:text-left text-left"></p>
+          </div>
+
+
+          <div className="flex items-center ">
+            <nav className={`ml-auto ${s.link}`}>
+            <Link
+                href="/order"
+                className="px-6 py-3 border mr-4 border-2 font-medium text-center bg-red-600 rounded-full sm:text-white transition duration-500 ease-in-out transform hover:scale-110"
+              >
+                Get UnblockVPN
+              </Link>
+
+              <Link href="/support" className={s.link}>
+                Support
+              </Link>
+
             </nav>
 
             {user ? (
@@ -46,7 +66,7 @@ export default async function Navbar() {
             </Link>
           </>
         ) : (
-          <Link href="/signin" className={`${s.link} whitespace-nowrap`}>
+          <Link href="/signin" className={`${s.link} mr-2 whitespace-nowrap`}>
             Log in
           </Link>
         )}
