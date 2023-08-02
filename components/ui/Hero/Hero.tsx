@@ -55,7 +55,7 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
         </Container>
       </div>
 
-      <Container className="mx-auto max-w-[1920px] bg-white dark:bg-white text-black flex flex-col items-center py-4 sm:py-12 sm:px-8">
+      <Container className="mx-auto max-w-[1920px] mb-24 bg-white dark:bg-black dark:text-white text-black flex flex-col items-center py-4 sm:py-12 sm:px-8">
   <div className="text-4xl mb-10 font-extrabold sm:text-4xl sm:leading-relaxed">
     Why go premium?
   </div>
@@ -66,7 +66,7 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
           <img src="/music.png" alt="My Image" />
         </div>
         <div className="ml-4 text-center"> {/* Updated: Added text-center class */}
-          <p className="font-bold text-black">Safer on public Wi-Fi</p>
+          <p className="font-bold">Safer on public Wi-Fi</p>
           <p className="text-black">Increase protection.</p>
         </div>
       </div>
@@ -75,8 +75,8 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
           <img src="/movies.png" alt="My Image" />
         </div>
         <div className="ml-4 text-center"> {/* Updated: Added text-center class */}
-          <p className="font-bold text-black">Stream music, movies and TV.</p>
-          <p className="text-black">Enjoy the entire catalog.</p>
+          <p className="font-bold">Stream music, movies and TV.</p>
+          <p>Enjoy the entire catalog.</p>
         </div>
       </div>
       <div className="flex flex-col items-center">
@@ -84,8 +84,8 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
           <img src="/privacy.png" alt="My Image" />
         </div>
         <div className="ml-4 text-center"> {/* Updated: Added text-center class */}
-          <p className="font-bold text-black">Keep your internet privacy.</p>
-          <p className="text-black">Even on mobile.</p>
+          <p className="font-bold">Keep your internet privacy.</p>
+          <p>Even on mobile.</p>
         </div>
       </div>
       <div className="flex flex-col items-center">
@@ -93,8 +93,8 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
           <img src="/bank.png" alt="My Image" />
         </div>
         <div className="ml-4 text-center"> {/* Updated: Added text-center class */}
-          <p className="font-bold text-black">Shop without limits.</p>
-          <p className="text-black">Location bias shopping.</p>
+          <p className="font-bold">Shop without limits.</p>
+          <p>Location bias shopping.</p>
         </div>
       </div>
     </div>

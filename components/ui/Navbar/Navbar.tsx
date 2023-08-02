@@ -17,8 +17,8 @@ export default async function Navbar() {
         Skip to content
       </a>
       <div className="mx-auto max-w-[1920px] px-6 flex flex-col text-left w-full">
-        <div className=" flex justify-between flex items-center">
-          <div className="flex items-center justify-center mt-2 justify-start">
+        <div className="mt-1 flex justify-between flex items-center">
+          <div className="flex items-center justify-center justify-start">
           <Link href="/" className={`${s.logo}  `} aria-label="Logo">
               <Logo />
               </Link>
@@ -47,7 +47,7 @@ export default async function Navbar() {
             <nav className={`ml-auto ${s.link}`}>
             <Link
                 href="/order"
-                className="px-6 py-3 border mr-4 border-2 font-medium text-center bg-red-600 rounded-full sm:text-white transition duration-500 ease-in-out transform hover:scale-110"
+                className="px-4 py-2 border mr-4 border-2 font-medium text-center bg-black dark:bg-white dark:text-black rounded-full sm:text-white transition duration-500 ease-in-out transform hover:scale-110"
               >
                 Get UnblockVPN
               </Link>
