@@ -12,7 +12,7 @@ interface Props {
   products: any[]; // Add the appropriate type for the 'products' prop
 }
 
-const Download: React.FC<Props> = ({
+const Founders: React.FC<Props> = ({
   session,
   user,
   subscription,
@@ -154,4 +154,4 @@ const Download: React.FC<Props> = ({
   );
 };
 
-export default Download;
+export default Founders;

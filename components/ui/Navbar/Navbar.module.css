@@ -191,5 +191,28 @@
 }
 
 
+/* New classes for Hero component */
+.founderContainer {
+  @apply mx-auto sm:text-center max-w-screen-sm sm:max-w-[1920px] bg-black py-4 sm:py-12 sm:px-8;
+}
+
+.founderTitle {
+  @apply text-left text-4xl mb-10 font-extrabold sm:text-lg sm:leading-relaxed;
+}
+
+.founderSubtitle {
+  @apply text-left mb-10 leading-normal text-xl sm:text-lg sm:leading-relaxed;
+}
+
+.founderButton {
+  @apply px-8 py-2 font-medium text-center dark:bg-white bg-black rounded-full sm:text-white dark:text-black;
+}
+
+.founderDisclaimer {
+  @apply mt-4 items-start text-sm font-medium space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row;
+}
+
+
+
 
 }

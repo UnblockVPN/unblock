@@ -7,6 +7,7 @@ import { Providers } from '@/components/Providers';
 
 
 
+
 const meta = {
   title: 'UnblockVPN ',
   description: 'Brought to you by Vercel, Stripe, and Supabase.',
