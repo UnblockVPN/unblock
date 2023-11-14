@@ -340,8 +340,11 @@ export default function Footer() {
                 Investor Centre
               </Link>
 
-              <Link href="https://web3.unblockvpn.io" className={s.link}>
-              Web3 Founder Program 🚀
+              <Link 
+                href="https://web3.unblockvpn.io" 
+                className=" transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                Web3 Founder Program 🚀
               </Link>
 
 
