@@ -30,9 +30,7 @@ export default async function Navbar() {
               <Link href="/download" className={s.link}>
                 Download
               </Link>
-              <Link href="https://web3.unblockvpn.io" className={s.link}>
-              Web3 Founder Program 🚀
-              </Link>
+              
                 <p className="text-3xl ml-4 font-extrabold text-zinc-800 dark:text-white sm:text-left text-left"></p>
           </div>
 

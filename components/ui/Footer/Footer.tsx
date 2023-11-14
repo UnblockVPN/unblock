@@ -334,21 +334,20 @@ export default function Footer() {
           <li className="py-3 md:py-0 md:pb-4">
             <p className="font-bold  transition duration-150 ease-in-out hover:text-zinc-200">
               <Link
-                href="/support"
+                href="https://web3.unblockvpn.io"
                 className=" transition duration-150 ease-in-out hover:text-zinc-200"
               >
-                Support Centre
+                Investor Centre
               </Link>
+
+              <Link href="https://web3.unblockvpn.io" className={s.link}>
+              Web3 Founder Program 🚀
+              </Link>
+
+
               </p>
             </li>
-            <li className="py-3 md:py-0 md:pb-4">
-              <Link
-                href="/support/qsg"
-                className=" transition duration-150 ease-in-out hover:text-zinc-200"
-              >
-                Quick Start Guide
-              </Link>
-            </li>
+          
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/support/faq"
@@ -377,22 +376,7 @@ export default function Footer() {
               </Link>
               </p>
             </li>
-            <li className="py-3 md:py-0 md:pb-4">
-              <Link
-                href="/learn/whatis"
-                className=" transition duration-150 ease-in-out hover:text-zinc-200"
-              >
-                What is a VPN
-              </Link>
-            </li>
-            <li className="py-3 md:py-0 md:pb-4">
-              <Link
-                href="/learn/cases"
-                className=" transition duration-150 ease-in-out hover:text-zinc-200"
-              >
-                Use Cases
-              </Link>
-            </li>
+          
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/learn/blog"
