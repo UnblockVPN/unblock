@@ -1,10 +1,10 @@
 // app/channels/affiliates/page.tsx
 import React, { ReactNode } from 'react';
-import { useRouter } from 'next/router';
 import { getSession, getUserDetails, getSubscription } from '@/app/supabase-server';
 import { createServerActionClient } from '@supabase/auth-helpers-nextjs';
 import { Database } from '@/types_db';
 import { cookies } from 'next/headers';
+import { redirect } from 'next/navigation';
 
 interface Props {
   title: string;
@@ -15,7 +15,6 @@ interface Props {
 
 export default async function ChannelsAffiliates(props: Props) {
   const { title, description, footer, children } = props;
-  const router = useRouter();
 
   // Create a server action client for Supabase interactions
   const supabase = createServerActionClient<Database>({ cookies });
@@ -24,8 +23,7 @@ export default async function ChannelsAffiliates(props: Props) {
 
   if (!session?.user) {
     // Redirect to sign-in if not logged in with a return URL
-    router.push(`/signin?redirect=${encodeURIComponent(router.asPath)}`);
-    return null;
+    return redirect(`/signin?redirect=${encodeURIComponent('/channels/affiliates')}`);
   }
 
   const [userDetailsResponse, subscriptionResponse] = await Promise.all([
@@ -42,17 +40,7 @@ export default async function ChannelsAffiliates(props: Props) {
       minimumFractionDigits: 0
     }).format((subscriptionResponse?.prices?.unit_amount || 0) / 100);
 
-  // Example: Using Supabase client for updating user details (as needed)
-  // const updateName = async (newName: string) => {
-  //   const { error } = await supabase
-  //     .from('users')
-  //     .update({ full_name: newName })
-  //     .eq('id', user.id);
-  //   if (error) {
-  //     console.error(error);
-  //     // Revalidation logic here
-  //   }
-  // };
+  // ... Additional functionality or content here ...
 
   return (
     <section className="mb-32 bg-black">
