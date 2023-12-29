@@ -6,12 +6,7 @@ import { Database } from '@/types_db';
 import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
 
-interface Props {
-  title: string;
-  description?: string;
-  footer?: ReactNode;
-  children?: ReactNode;
-}
+
 
 export default async function ChannelsAffiliates(props: Props) {
   const { title, description, footer, children } = props;
