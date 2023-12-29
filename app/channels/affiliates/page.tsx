@@ -1,32 +1,26 @@
 // app/channels/affiliates/page.tsx
 import React, { useEffect } from 'react';
-import { createServerActionClient } from '@supabase/auth-helpers-nextjs';
-import { Database } from '@/types_db';
-import { cookies } from 'next/headers';
-import { fetch } from 'next/navigation';
+import { useRouter } from 'next/router';
 
 export default function ChannelsAffiliates() {
-  // Direct data fetching within the component
-  useEffect(() => {
-    // Create a server action client for Supabase interactions
-    const supabase = createServerActionClient<Database>({ cookies });
+  const router = useRouter();
 
-    // Fetch session and determine redirection
-    const fetchSessionAndRedirect = async () => {
-      const session = await fetch('/api/getSession').then(res => res.json());
+  useEffect(() => {
+    // Client-side logic here
+    async function fetchSessionAndRedirect() {
+      // Example: Fetch session data from an API endpoint
+      const sessionResponse = await fetch('/api/getSession');
+      const session = await sessionResponse.json();
 
       if (!session?.user) {
-        window.location.href = `/signin?redirect=${encodeURIComponent('/channels/affiliates')}`;
+        router.push(`/signin?redirect=${encodeURIComponent('/channels/affiliates')}`);
       } else {
-        const userDetails = await fetch('/api/getUserDetails').then(res => res.json());
-        const subscription = await fetch('/api/getSubscription').then(res => res.json());
-
-        // Set state or perform actions with userDetails and subscription
+        // Handle logged-in user scenario
       }
-    };
+    }
 
     fetchSessionAndRedirect();
-  }, []);
+  }, [router]);
 
   return (
     <section className="mb-32 bg-black">
@@ -34,3 +28,5 @@ export default function ChannelsAffiliates() {
     </section>
   );
 }
+
+ChannelsAffiliates.client = true; // Mark this component as a client component
