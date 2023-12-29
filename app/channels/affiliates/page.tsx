@@ -1,77 +1,77 @@
-import React from 'react';
-import { getSession } from '@/app/supabase-server';
+// app/channels/affiliates/page.tsx
+import React, { ReactNode } from 'react';
+import { useRouter } from 'next/router';
+import { getSession, getUserDetails, getSubscription } from '@/app/supabase-server';
 import { createServerActionClient } from '@supabase/auth-helpers-nextjs';
 import { Database } from '@/types_db';
-import { revalidatePath } from 'next/cache';
+import { cookies } from 'next/headers';
 
-export async function getServerSideProps(context) {
-  // Create a server action client for Supabase interactions
-  const supabase = createServerActionClient<Database>({
-    cookies: context.req.cookies,
-  });
-
-  const session = await getSession(context);
-
-  if (!session?.user) {
-    // Redirect to the sign-in page with a return URL
-    return {
-      redirect: {
-        destination: `/signin?redirect=${encodeURIComponent('/channels/affiliates')}`,
-        permanent: false,
-      },
-    };
-  }
-
-  // Example of using the supabase client for fetching user details
-  const { data: userDetails, error } = await supabase
-    .from('users')
-    .select('*')
-    .eq('id', session.user.id)
-    .single();
-
-  // Handle errors or no data scenarios
-  if (error || !userDetails) {
-    // Log error and revalidate path if necessary
-    console.error(error);
-    revalidatePath('/channels/affiliates');
-    return { props: {} };
-  }
-
-  // Additional logic for fetching subscription details or other user data
-  // ...
-
-  return {
-    props: {
-      user: session.user,
-      userDetails,
-      // Include other relevant data
-    },
-  };
+interface Props {
+  title: string;
+  description?: string;
+  footer?: ReactNode;
+  children?: ReactNode;
 }
 
-function AffiliateChannelPage({ user, userDetails }) {
+export default async function ChannelsAffiliates(props: Props) {
+  const { title, description, footer, children } = props;
+  const router = useRouter();
+
+  // Create a server action client for Supabase interactions
+  const supabase = createServerActionClient<Database>({ cookies });
+
+  const session = await getSession();
+
+  if (!session?.user) {
+    // Redirect to sign-in if not logged in with a return URL
+    router.push(`/signin?redirect=${encodeURIComponent(router.asPath)}`);
+    return null;
+  }
+
+  const [userDetailsResponse, subscriptionResponse] = await Promise.all([
+    getUserDetails(),
+    getSubscription()
+  ]);
+
+  const user = session.user;
+
+  const subscriptionPrice = subscriptionResponse &&
+    new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: subscriptionResponse?.prices?.currency!,
+      minimumFractionDigits: 0
+    }).format((subscriptionResponse?.prices?.unit_amount || 0) / 100);
+
+  // Example: Using Supabase client for updating user details (as needed)
+  // const updateName = async (newName: string) => {
+  //   const { error } = await supabase
+  //     .from('users')
+  //     .update({ full_name: newName })
+  //     .eq('id', user.id);
+  //   if (error) {
+  //     console.error(error);
+  //     // Revalidation logic here
+  //   }
+  // };
+
   return (
     <section className="mb-32 bg-black">
       <div className="max-w-6xl px-4 py-8 mx-auto sm:px-6 sm:pt-24 lg:px-8">
         <div className="sm:align-center sm:flex sm:flex-col">
           <h1 className="text-4xl font-extrabold text-white sm:text-center sm:text-6xl">
-            Affiliates
+            {title || 'Affiliates'}
           </h1>
           <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
-            Welcome to the Affiliate Channel, {userDetails?.full_name || user?.email}
+            {description || 'Call to action here'}
           </p>
-          {/* Additional user-specific content */}
+          {children}
+        </div>
+        <div>
+          <p>Welcome, {userDetailsResponse?.full_name || user?.email}</p>
+          <p>Your subscription: {subscriptionPrice}</p>
+          {/* Additional functionality or content here */}
         </div>
       </div>
     </section>
   );
 }
-
-interface Props {
-  title: string;
-  description?: string;
-  footer?: React.ReactNode;
-  children?: React.ReactNode;
-}
-
-export default AffiliateChannelPage;
