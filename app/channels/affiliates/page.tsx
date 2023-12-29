@@ -1,65 +1,55 @@
-import ManageSubscriptionButton from './ManageSubscriptionButton';
-import {
-  getSession,
-  getUserDetails,
-  getSubscription
-} from '@/app/supabase-server';
-import Button from '@/components/ui/Button';
-import { Database } from '@/types_db';
+import React from 'react';
+import { getSession } from '@/app/supabase-server';
 import { createServerActionClient } from '@supabase/auth-helpers-nextjs';
+import { Database } from '@/types_db';
 import { revalidatePath } from 'next/cache';
-import { cookies } from 'next/headers';
-import Link from 'next/link';
-import { redirect } from 'next/navigation';
-import { ReactNode } from 'react';
 
-export default async function About() {
-  const [session, userDetails, subscription] = await Promise.all([
-    getSession(),
-    getUserDetails(),
-    getSubscription()
-  ]);
+export async function getServerSideProps(context) {
+  // Create a server action client for Supabase interactions
+  const supabase = createServerActionClient<Database>({
+    cookies: context.req.cookies,
+  });
 
-  const user = session?.user;
+  const session = await getSession(context);
 
+  if (!session?.user) {
+    // Redirect to the sign-in page with a return URL
+    return {
+      redirect: {
+        destination: `/signin?redirect=${encodeURIComponent('/channels/affiliates')}`,
+        permanent: false,
+      },
+    };
+  }
 
-  const subscriptionPrice =
-    subscription &&
-    new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: subscription?.prices?.currency!,
-      minimumFractionDigits: 0
-    }).format((subscription?.prices?.unit_amount || 0) / 100);
+  // Example of using the supabase client for fetching user details
+  const { data: userDetails, error } = await supabase
+    .from('users')
+    .select('*')
+    .eq('id', session.user.id)
+    .single();
 
-  const updateName = async (formData: FormData) => {
-    'use server';
+  // Handle errors or no data scenarios
+  if (error || !userDetails) {
+    // Log error and revalidate path if necessary
+    console.error(error);
+    revalidatePath('/channels/affiliates');
+    return { props: {} };
+  }
 
-    const newName = formData.get('name') as string;
-    const supabase = createServerActionClient<Database>({ cookies });
-    const session = await getSession();
-    const user = session?.user;
-    const { error } = await supabase
-      .from('users')
-      .update({ full_name: newName })
-      .eq('id', user?.id);
-    if (error) {
-      console.log(error);
-    }
-    revalidatePath('/about');
+  // Additional logic for fetching subscription details or other user data
+  // ...
+
+  return {
+    props: {
+      user: session.user,
+      userDetails,
+      // Include other relevant data
+    },
   };
+}
 
-  const updateEmail = async (formData: FormData) => {
-    'use server';
-
-    const newEmail = formData.get('email') as string;
-    const supabase = createServerActionClient<Database>({ cookies });
-    const { error } = await supabase.auth.updateUser({ email: newEmail });
-    if (error) {
-      console.log(error);
-    }
-    revalidatePath('/about');
-  };
-
+function AffiliateChannelPage({ user, userDetails }) {
   return (
     <section className="mb-32 bg-black">
       <div className="max-w-6xl px-4 py-8 mx-auto sm:px-6 sm:pt-24 lg:px-8">
@@ -68,11 +58,11 @@ export default async function About() {
             Affiliates
           </h1>
           <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
-            Call to action here
+            Welcome to the Affiliate Channel, {userDetails?.full_name || user?.email}
           </p>
+          {/* Additional user-specific content */}
         </div>
       </div>
-      
     </section>
   );
 }
@@ -80,6 +70,8 @@ export default async function About() {
 interface Props {
   title: string;
   description?: string;
-  footer?: ReactNode;
-  children: ReactNode;
+  footer?: React.ReactNode;
+  children?: React.ReactNode;
 }
+
+export default AffiliateChannelPage;
