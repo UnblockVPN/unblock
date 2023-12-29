@@ -1,64 +1,36 @@
 // app/channels/affiliates/page.tsx
-import React, { ReactNode } from 'react';
-import { getSession, getUserDetails, getSubscription } from '@/app/supabase-server';
+import React, { useEffect } from 'react';
 import { createServerActionClient } from '@supabase/auth-helpers-nextjs';
 import { Database } from '@/types_db';
 import { cookies } from 'next/headers';
-import { redirect } from 'next/navigation';
+import { fetch } from 'next/navigation';
 
-interface Props {
-  title: string;
-  description?: string;
-  footer?: ReactNode;
-  children?: ReactNode;
-  user: any; // Adjust this type based on your user data
-  userDetails: any; // Adjust this type based on userDetails data
-  subscriptionPrice: string;
-}
+export default function ChannelsAffiliates() {
+  // Direct data fetching within the component
+  useEffect(() => {
+    // Create a server action client for Supabase interactions
+    const supabase = createServerActionClient<Database>({ cookies });
 
-// This function fetches data and returns props for the component
-export async function getServerSideProps() {
-  const supabase = createServerActionClient<Database>({ cookies });
-  const session = await getSession();
+    // Fetch session and determine redirection
+    const fetchSessionAndRedirect = async () => {
+      const session = await fetch('/api/getSession').then(res => res.json());
 
-  if (!session?.user) {
-    return {
-      redirect: {
-        destination: `/signin?redirect=${encodeURIComponent('/channels/affiliates')}`,
-        permanent: false,
-      },
+      if (!session?.user) {
+        window.location.href = `/signin?redirect=${encodeURIComponent('/channels/affiliates')}`;
+      } else {
+        const userDetails = await fetch('/api/getUserDetails').then(res => res.json());
+        const subscription = await fetch('/api/getSubscription').then(res => res.json());
+
+        // Set state or perform actions with userDetails and subscription
+      }
     };
-  }
 
-  const [userDetailsResponse, subscriptionResponse] = await Promise.all([
-    getUserDetails(),
-    getSubscription()
-  ]);
+    fetchSessionAndRedirect();
+  }, []);
 
-  const subscriptionPrice = subscriptionResponse &&
-    new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: subscriptionResponse?.prices?.currency!,
-      minimumFractionDigits: 0
-    }).format((subscriptionResponse?.prices?.unit_amount || 0) / 100);
-
-  return {
-    props: {
-      user: session.user,
-      userDetails: userDetailsResponse,
-      subscriptionPrice,
-    },
-  };
-}
-
-// The actual page component
-function ChannelsAffiliates({ title, description, footer, children, user, userDetails, subscriptionPrice }: Props) {
-  // JSX rendering
   return (
     <section className="mb-32 bg-black">
       {/* Your component JSX */}
     </section>
   );
 }
-
-export default ChannelsAffiliates;
