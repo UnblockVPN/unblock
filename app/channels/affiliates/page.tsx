@@ -9,7 +9,6 @@ import { Database } from '@/types_db';
 import { createServerActionClient } from '@supabase/auth-helpers-nextjs';
 import { revalidatePath } from 'next/cache';
 import { cookies } from 'next/headers';
-import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
 
@@ -20,8 +19,10 @@ export default async function Affiliates() {
     getSubscription()
   ]);
 
-  const user = session?.user;
-
+  // Check if user is logged in, redirect to signin if not
+  if (!session) {
+    return redirect('/signin');
+  }
 
   const subscriptionPrice =
     subscription &&
@@ -68,7 +69,7 @@ export default async function Affiliates() {
             Affiliates
           </h1>
           <p className="max-w-2xl m-auto mt-5 text-xl text-zinc-200 sm:text-center sm:text-2xl">
-            Call to action here
+            Call to crazyland here
           </p>
         </div>
       </div>
