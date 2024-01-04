@@ -28,6 +28,6 @@ export async function GET(request: NextRequest) {
   console.log(`Redirecting to: ${redirectUrl}`);
 
   // Redirect to the specified path or to the home page
-  return NextResponse.redirect(redirectUrl);
+  return NextResponse.redirect(new URL(redirectPath, requestUrl.origin).href);
 }
 

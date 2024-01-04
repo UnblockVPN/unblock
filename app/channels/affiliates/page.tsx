@@ -13,16 +13,25 @@ import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
 
 export default async function Affiliates() {
+  console.log('Affiliates Page: Starting data fetch.');
+
   const [session, userDetails, subscription] = await Promise.all([
     getSession(),
     getUserDetails(),
     getSubscription()
   ]);
+  console.log('Affiliates Page: Session Data', session);
+  console.log('Affiliates Page: User Details', userDetails);
+  console.log('Affiliates Page: Subscription Data', subscription);
 
   // Check if user is logged in, redirect to signin if not
   if (!session) {
-    return redirect('/signin');
+    console.log('Affiliates Page: No active session. Redirecting to sign-in page...');
+
+    const returnUrl = encodeURIComponent('/channels/affiliates');
+    return redirect(`/signin?redirect=${returnUrl}`);
   }
+
 
   const subscriptionPrice =
     subscription &&
@@ -31,6 +40,7 @@ export default async function Affiliates() {
       currency: subscription?.prices?.currency!,
       minimumFractionDigits: 0
     }).format((subscription?.prices?.unit_amount || 0) / 100);
+    console.log(`Affiliates Page: Calculated Subscription Price - ${subscriptionPrice}`);
 
   const updateName = async (formData: FormData) => {
     'use server';
