@@ -9,7 +9,7 @@ import type { Database } from '@/types_db';
 export async function GET(request: NextRequest) {
   const requestUrl = new URL(request.url);
   const code = requestUrl.searchParams.get('code');
-  const redirectPath = requestUrl.searchParams.get('redirect') || '/';
+  const redirectPath = requestUrl.searchParams.get('redirect') || '/account';
 
   // Log the received code and redirect path
   console.log(`Received code: ${code}`);

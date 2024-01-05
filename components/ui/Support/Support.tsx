@@ -24,7 +24,11 @@ const Support: React.FC<Props> = ({ session, user, subscription, products }) => 
               <p className="leading-normal mb-6 font-bold text-xl sm:text-l">
                 <Link href="/signin">Login for faster help</Link>
               </p>
+
+
               <Faq />
+
+              
             </div>
           </div>
         </Container>
