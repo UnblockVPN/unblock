@@ -31,7 +31,7 @@ const Legal = () => {
           <p><strong>Terms.</strong></p>
           <p>These General Terms and the Subscription Terms, along with any applicable Service Specific Terms (see Section 2 of the General Terms below) (collectively, the "Terms").</p>
           <p><strong>UnblockVPN.</strong></p>
-          <p>For the purpose of the Terms, "UnblockVPN," "we," "us," or "our" means UnblockVPN, a company registered at World Trade Center, 53rd St East Marbella,Panama City, Republic of Panama.</p>
+          <p>For the purpose of the Terms, "UnblockVPN," "we," "us," or "our" means UnblockVPN, a company registered at 188 Quay Street, Auckland, New Zealand.</p>
           <p><strong>Privacy.</strong></p>
           <p>For information about how we collect and process your personal data, please read our Privacy Policy.</p>
           <p><strong>YOUR AGREEMENT WITH UNBLOCKVPN</strong></p>

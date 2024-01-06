@@ -27,7 +27,7 @@ const Legal = () => {
           This document (“Privacy Policy”) explains the privacy rules applicable to personal data and other information collected or submitted when you access, install, or use UnblockVPN Services and Websites regardless of the device (computer, mobile phone, tablet, etc.) you use.
         </p>
         <p className="mb-4">
-          The data controller of your personal data, as described in this Privacy Policy, is UnblockVPN S.A. (address: World Trade Center, 53rd St East Marbella, Panama City, Republic of Panama; email: privacy@unblockvpn.io) (“UnblockVPN”, “we”, “us”, or “our”).
+          The data controller of your personal data, as described in this Privacy Policy, is UnblockVPN Limited (address: 188 Quay Street, Auckland, New Zealand; email: privacy@unblockvpn.io) (“UnblockVPN”, “we”, “us”, or “our”).
         </p>
         <p className="mb-4">
           The capitalized words used in this Privacy Policy as definitions are defined here or in our General Terms.
@@ -147,7 +147,7 @@ const Legal = () => {
           If you have any questions, concerns, or requests regarding this Privacy Policy or the processing of your personal data, please contact us at:
         </p>
         <p className="mb-4">
-          Address: World Trade Center, 53rd St East Marbella, Panama City, Republic of Panama
+          Address: 188 Quay Street, Auckland, New Zealand
         </p>
         <p className="mb-4">
           Email: privacy@unblockvpn.io
