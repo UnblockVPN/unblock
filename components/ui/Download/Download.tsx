@@ -23,7 +23,7 @@ const Founders: React.FC<Props> = ({
       <div
         className={`${s.downloadContainer} mx-auto  `}
       >
-        <Container className="mx-auto max-w-[1920px] flex flex-col items-center justify-center py-4 ">
+        <Container className="mx-auto max-w-[2560px] flex flex-col items-center justify-center py-4 ">
 
           <div className="flex flex-col mt-12 max-w-6xl justify-center items-center px-4 text-center w-full">
             <div className="max-w-2xl">
@@ -53,7 +53,7 @@ const Founders: React.FC<Props> = ({
         </Container>
       </div>
 
-      <Container className="mx-auto max-w-[1920px] flex flex-col text-black items-center justify-center">
+      <Container className="mx-auto max-w-[2560px] flex flex-col text-black items-center justify-center">
         <div className="text-4xl text-center mt-6 mb-6 font-extrabold sm:text-4xl sm:text-4xl sm:leading-relaxed sm:text-center sm:whitespace-normal">
           Easily connect from laptop, mobile, and tablet, too.
         </div>
@@ -108,7 +108,7 @@ const Founders: React.FC<Props> = ({
       </Container>
 
       <section id="offer">
-        <Container className="mx-auto max-w-[1920px] flex bg-gray-600 text-white flex-col items-center py-4 sm:py-4 sm:px-6">
+        <Container className="mx-auto max-w-[2560px] flex bg-gray-600 text-white flex-col items-center py-4 sm:py-4 sm:px-6">
           <div className="flex justify-center mt-12 items-center">
             <img
               src="/Bezel-All-Hardware-small_2x-removebg-preview.png"

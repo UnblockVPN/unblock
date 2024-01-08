@@ -18,7 +18,7 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
       <div
         className={`${s.heroContainer} mx-auto max-w-screen-sm py-4 sm:py-12 sm:px-8`}
       >
-        <Container className="mx-auto max-w-[1920px] flex items-center  py-4">
+        <Container className="mx-auto max-w-[2560px] flex items-center  py-4">
           <div className="flex flex-col mt-12 mb-12 max-w-6xl items-center px-4 text-center w-full">
             <div className="max-w-2xl">
             <div className="max-w-2xl">
@@ -55,7 +55,7 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
         </Container>
       </div>
 
-      <Container className="mx-auto max-w-[1920px] mb-24 bg-white dark:bg-black dark:text-white text-black flex flex-col items-center py-4 sm:py-12 sm:px-8">
+      <Container className="mx-auto max-w-[2560px] mb-24 bg-white dark:bg-black dark:text-white text-black flex flex-col items-center py-4 sm:py-12 sm:px-8">
   <div className="text-4xl mb-10 font-extrabold sm:text-4xl sm:leading-relaxed">
     Why go premium?
   </div>
@@ -104,7 +104,7 @@ const Hero: React.FC<Props> = ({ session, user, subscription, products }) => {
 
 
       <section id="offer">
-  <Container className="mx-auto max-w-[1920px] bg-gray-200 text-black flex flex-col items-center py-4 sm:py-24 sm:px-8">
+  <Container className="mx-auto max-w-[2560px] bg-gray-200 text-black flex flex-col items-center py-4 sm:py-24 sm:px-8">
     <div className=" text-4xl text-center font-extrabold sm:text-4xl sm:leading-relaxed whitespace-nowrap">
       Pick your premium
     </div>
