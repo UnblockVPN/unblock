@@ -2,6 +2,7 @@ import Link from 'next/link';
 import s from '@/components/ui/Navbar/Navbar.module.css';
 import Logo from '@/components/icons/Logo';
 import GitHub from '@/components/icons/GitHub';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Footer() {
   return (
@@ -560,7 +561,7 @@ export default function Footer() {
 
 
 
-
+      <SpeedInsights />
 
     </footer>
   );

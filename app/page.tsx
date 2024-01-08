@@ -15,6 +15,7 @@ import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
 import { getActiveProductsWithPrices } from '@/app/supabase-server';
 
+
 export default async function About() {
   const [session, userDetails, subscription, products] = await Promise.all([
     getSession(),
